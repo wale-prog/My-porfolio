@@ -1,5 +1,4 @@
-body {
-  font-family: 'Inter', sans-serif;
+body {  
   background-color: #1c1a19;
   margin: 0;
   color: #fff;
@@ -7,60 +6,54 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
+.container {  
+  margin: 0 24px;
   overflow: hidden;
-}
-
-.nav-list {
-  display: flex;
-  list-style: none;
 }
 
 .header {
   background-color: #3e3c3c;
   margin: 0;
   height: 72px;
-  width: 100%;
-  position: fixed;
-}
-
-.nav-list-item a {
-  text-decoration: none;
-  margin-right: 16px;
-  color: #fff;
+  width: 100%; 
 }
 
 .main h1 {
   font-family: 'Crete Round', serif;
-  color: #f55800;
+  color: #ff6800;
   font-weight: 400;
-  font-size: 4.5rem;
-  line-height: 82px;
-  margin-top: 80px;
-  margin-bottom: 20px;
+  font-size: 3.5rem;
+  line-height: 4rem;    
 }
 
 .text-subheading h3 {
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   margin-top: 20px;
+  font-size: 1.5rem;
 }
 
 .text-body p {
-  line-height: 3rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 2rem;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  width: 32%;
+  
   position: relative;
-  left: 10%;
-  top: 32px;
+  
+  top: 4rem;
+}
+
+.navbar p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
