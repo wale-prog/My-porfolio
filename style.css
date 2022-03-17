@@ -1,0 +1,66 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1c1a19;
+  margin: 0;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.header {
+  background-color: #3e3c3c;
+  margin: 0;
+  height: 72px;
+  width: 100%;
+  position: fixed;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+  margin-right: 16px;
+  color: #fff;
+}
+
+.main h1 {
+  font-family: 'Crete Round', serif;
+  color: #f55800;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 82px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.text-subheading h3 {
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.text-body p {
+  line-height: 3rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  position: relative;
+  left: 10%;
+  top: 32px;
+}
