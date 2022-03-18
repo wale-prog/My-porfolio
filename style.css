@@ -78,10 +78,6 @@ body {
   flex-direction: column;
   margin-right: 4px;
 }
-/* 
-.linkedin:first-child {
-  position: relative;
-} */
 
 .flex-confused {
   display: flex;
