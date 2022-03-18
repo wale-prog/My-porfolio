@@ -6,6 +6,9 @@ body {
 
 .navbar {
   display: flex;
+  justify-content: space-between;  
+  position: relative;
+  top: 56px;
 }
 
 .container {  
@@ -16,7 +19,7 @@ body {
 .header {
   background-color: #3e3c3c;
   margin: 0;
-  height: 72px;
+  height: 92px;
   width: 100%; 
 }
 
@@ -25,30 +28,31 @@ body {
   color: #ff6800;
   font-weight: 400;
   font-size: 3.5rem;
-  line-height: 4rem;    
+  line-height: 4rem;
+  letter-spacing: 0.37px;
+  margin: 12px 0;    
 }
 
 .text-subheading h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  margin-top: 20px;
+  margin: 12px 0;
   font-size: 1.5rem;
 }
 
 .text-body p {
   font-family: 'Poppins', sans-serif;
-  line-height: 2rem;
+  line-height: 32px;
   font-weight: 400;
   font-size: 1rem;
+  margin: 12px 0;
 }
 
 .main {
   display: flex;
-  flex-direction: column;
-  
-  position: relative;
-  
-  top: 4rem;
+  flex-direction: column;  
+  position: relative;  
+  margin-top: 120px;
 }
 
 .navbar p {
@@ -56,4 +60,31 @@ body {
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.5rem;
+  margin: 0;
 }
+.socials{
+    display: flex;
+    justify-content: space-between; 
+    padding-right: 37%;
+    padding-left: 3%;   
+}
+.linkedin{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4px;
+}
+.linkedin:first-child{
+    position: relative;    
+}
+
+.flex-confused{
+    display: flex;
+}
+.hamburger{
+    border: solid 2px #fff;
+    margin-bottom: 4px;
+    width: 20px;
+    border-radius: 5px;   
+}
+
+
