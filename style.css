@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-  background-color: #3e3c3c;  
+  background-color: #3e3c3c;
   height: 92px;
   width: 100%;
   position: fixed;
@@ -87,7 +87,8 @@ body {
   width: 20px;
   border-radius: 5px;
 }
+
 .logo {
   text-decoration: none;
-  color: #fff
+  color: #fff;
 }
