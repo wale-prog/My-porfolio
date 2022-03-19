@@ -196,7 +196,7 @@ body {
 }
 
 .btn_2 {
-  width: 327px;  
+  width: 327px;    
 }
 
 #printing p {
@@ -219,3 +219,67 @@ margin: 0 16px;
   margin-bottom: 22px;
   margin-top: 12px;
 }
+
+#about-me {
+  margin-top: 120px;
+  width: 375px;
+  background-color: #1c1a19;
+  width: 375px;
+  height: 1901px;
+}
+
+#about-me h1 {
+  padding-top: 120px;
+  padding-bottom: 24px;
+  color: #ff6b00;
+  width: 327px;
+  font-family: 'Crete Round', serif;
+  letter-spacing: 00.37px;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 88px;
+}
+
+#about-me p {
+  font-family: 'Inter', sans-serif;
+  color: #f4f5f7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 327px;
+  line-height: 24px;
+}
+
+.about-btn {
+  width: 165px;
+  margin-top: 24px;
+
+}
+.about-btn a {
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+#about-me img {
+  margin-left: 215.35px;
+  position: relative;
+  bottom: 90px;
+}
+
+.line {
+  position: relative;
+  bottom: 80px
+}
+
+#about-category {
+  color: #fff;  
+}
+
+#about-category ul {
+  list-style: none;
+ text-align: center;
+}
+
