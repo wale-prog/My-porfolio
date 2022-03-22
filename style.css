@@ -6,11 +6,6 @@ body {
 
 #first-page {
   background-color: #1c1a19;
-  color: #fff;  
-}
-
-#first-page {
-  background-color: #1c1a19;
   color: #fff;
 }
 
@@ -35,7 +30,7 @@ body {
   z-index: 1;
 }
 
-.main h1 {
+.main h2 {
   font-family: 'Crete Round', serif;
   color: #ff6800;
   font-weight: 400;
@@ -80,7 +75,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding-right: 37%;
-
   padding-left: 3%;
   padding-bottom: 120px;
   list-style: none;
@@ -99,29 +93,12 @@ body {
   border-radius: 5px;
 }
 
-.portfolio {
-  background-color: #fff;
-  color: #000;
-  text-align: center;
-}
-
 .underline {
   border-bottom: solid #212121 1px;
   width: 327px;
   margin-top: 24px;
   position: relative;
   top: 120px;
-}
-
-.portfolio p {
-  font-family: 'Crete Round', serif;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 52px;
-  margin: 120px 24px;
-  position: relative;
-  top: 120px;
-  color: #1c1a19;
 }
 
 .portfolio-heading {
@@ -167,7 +144,7 @@ body {
   display: flex;
   margin-right: 12px;
   padding-left: 0;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 .skill-list li {
@@ -180,24 +157,34 @@ body {
   font-size: 15px;
 }
 
-.btn a {
+.grid-container a button {
   text-decoration: none;
-  padding: 12px;
   color: #fff;
+  padding: 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   line-height: 24px;
   font-size: 15px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.skill-list-btn {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 16px;
   width: 124px;
   height: 48px;
+  cursor: pointer;
+  padding: 12px;
 }
 
 .btn {
   background-color: #ff6b00;
   border: none;
-  width: 124px;
-  height: 48px;
-  margin-bottom: 36px;
 }
 
 .printing {
@@ -206,7 +193,7 @@ body {
   margin: 0 24px;
 }
 
-.printing h1 {
+.printing h2 {
   margin-top: 84px;
   font-family: 'Crete Round', serif;
   font-weight: 400;
@@ -217,7 +204,7 @@ body {
   color: #fff;
 }
 
-#portfolio h1 {
+#portfolio h2 {
   font-family: 'Crete Round', serif;
   font-size: 32px;
   line-height: 44px;
@@ -226,6 +213,14 @@ body {
 
 .btn_2 {
   width: 327px;
+  padding: 12px 118.7px;
+  height: 48px;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 16px;
 }
 
 .printing p {
