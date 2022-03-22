@@ -1,5 +1,5 @@
 body {
-  margin: 0;  
+  margin: 0;
   padding: 0;
   width: 375px;
 }
@@ -24,7 +24,7 @@ body {
 .header {
   background-color: #3e3c3c;
   height: 92px;
-  width: 100%;
+  width: 375px;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -58,9 +58,9 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  position: relative; 
+  position: relative;
   top: 200px;
-  height: 600px;  
+  height: 600px;
 }
 
 .navbar p {
@@ -76,8 +76,14 @@ body {
   justify-content: space-between;
   padding-right: 37%;
   padding-left: 3%;
-  padding-bottom: 62px;
+  padding-bottom: 120px;
   list-style: none;
+}
+
+.back-pic {
+  position: absolute;
+  top: 470px;
+  left: 240px;
 }
 
 .hamburger {
@@ -96,16 +102,20 @@ body {
   font-family: 'Crete Round', serif;
   font-weight: 400;
   font-size: 40px;
-  text-align: left;  
+  text-align: left;
   line-height: 52px;
   margin-top: 120px;
 }
 
-.container2 {
-  padding: 0 24px
+.portfolio-img {
+  margin-top: 72px;
 }
+
 #portfolio {
   color: #091e42;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 24px;
 }
 
 .portfolio-text {
@@ -116,38 +126,31 @@ body {
 }
 
 .rule {
-  margin-top: 24px;  
+  margin-top: 24px;
 }
 
 .grid-container {
   display: grid;
-  grid-template-rows: 375px 375 375px 375px 375 375px; 
-  gap: 10px;
+  grid-template-rows: 880px 386px 386px;
+  grid-template-columns: 375px;
+  gap: 48px;
 }
 
-.grid-container h1 {
-  font-family: 'Crete Round', serif;
-  font-size: 32px;
-  line-height: 44px;
-  font-weight: 400;
-}
-
-.skill-list{
+.skill-list {
   list-style: none;
-  display: flex;  
-  margin-right: 12px;  
+  display: flex;
+  margin-right: 12px;
   padding-left: 0;
-  margin-bottom: 12px;  
+  margin-bottom: 12px;
 }
 
 .skill-list li {
   border: solid 1px;
   padding: 10px 12px;
   margin-right: 12px;
-  line-height: 20px; 
+  line-height: 20px;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  line-height: 20px;
   font-size: 15px;
 }
 
@@ -161,27 +164,23 @@ body {
   font-size: 15px;
   width: 124px;
   height: 48px;
-  
 }
 
 .btn {
-  background-color: #ff6b00; 
+  background-color: #ff6b00;
   border: none;
   width: 124px;
   height: 48px;
   margin-bottom: 36px;
 }
 
-.grid-container img {
-  margin-top: 80px;
-}
-
-#printing{
+.printing {
   background-image: url('images/background.png');
-  height: 386px;  
+  height: 386px;
+  margin: 0 24px;
 }
 
-#printing h1 {
+.printing h1 {
   margin-top: 84px;
   font-family: 'Crete Round', serif;
   font-weight: 400;
@@ -190,26 +189,31 @@ body {
   margin-left: 16px;
   margin-right: 16px;
   color: #fff;
-  margin-bottom: 12px
+}
+
+#portfolio h1 {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 400;
 }
 
 .btn_2 {
-  width: 327px;    
+  width: 327px;
 }
 
-#printing p {
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: #fff;
-margin: 0 16px;
-}
-
-#printing .skill-list li {
+.printing p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
   color: #fff;
+  margin: 0 16px;
+}
 
+.printing .skill-list li {
+  color: #fff;
 }
 
 .printing-list {
@@ -222,7 +226,6 @@ margin: 0 16px;
   margin-top: 120px;
   width: 375px;
   background-color: #1c1a19;
-  width: 375px;
   height: 1901px;
 }
 
@@ -245,24 +248,22 @@ margin: 0 16px;
   font-size: 16px;
   line-height: 24px;
   width: 327px;
-  line-height: 24px;
+  margin-bottom: 36px;
 }
 
 .about-btn {
   width: 165px;
-  
-  background-color: #ff6b00; 
+  background-color: #ff6b00;
   border: none;
-  
-  
-
 }
+
 .about-btn a {
   padding: 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 24px;
+  letter-spacing: 0.03em;
 }
 
 #about-me img {
@@ -273,7 +274,7 @@ margin: 0 16px;
 
 .line {
   position: relative;
-  bottom: 80px
+  bottom: 80px;
 }
 
 #about-category {
@@ -290,11 +291,11 @@ margin: 0 16px;
 .language-bullet {
   position: relative;
   top: 70px;
-  right: 140px;  
+  right: 140px;
 }
 
 #about-category p {
-  padding-left: 36px;   
+  padding-left: 36px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -313,12 +314,11 @@ margin: 0 16px;
 .frameworks-bullet {
   position: relative;
   top: 65px;
-  right: 150px; 
+  right: 150px;
 }
 
 .skills-bullet {
   position: relative;
   top: 70px;
-  right: 90px; 
+  right: 90px;
 }
-
