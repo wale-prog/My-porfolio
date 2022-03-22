@@ -9,6 +9,11 @@ body {
   color: #fff;  
 }
 
+#first-page {
+  background-color: #1c1a19;
+  color: #fff;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -56,25 +61,26 @@ body {
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
   position: relative;
   top: 200px;
   height: 600px;
 }
 
-.navbar p {
+.logo {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.5rem;
   margin: 0;
+  text-decoration: none;
+  color: #fff;
 }
 
 .socials {
   display: flex;
   justify-content: space-between;
   padding-right: 37%;
+
   padding-left: 3%;
   padding-bottom: 120px;
   list-style: none;
@@ -93,9 +99,29 @@ body {
   border-radius: 5px;
 }
 
-.logo {
-  text-decoration: none;
-  color: #fff;
+.portfolio {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
+.underline {
+  border-bottom: solid #212121 1px;
+  width: 327px;
+  margin-top: 24px;
+  position: relative;
+  top: 120px;
+}
+
+.portfolio p {
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 120px 24px;
+  position: relative;
+  top: 120px;
+  color: #1c1a19;
 }
 
 .portfolio-heading {
