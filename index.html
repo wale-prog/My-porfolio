@@ -13,11 +13,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
     <title>My Portfolio</title>
 </head>
 
 <body>
-    <section id="first-page">
+    <div id="first-page">
+
         <header class="header">
             <nav class="navbar container">
                 <a class="logo" href="#">Olawale Olapetan</a>
@@ -28,28 +33,28 @@
                     <div class="hamburger">
 
                     </div>
+
                     <div class="hamburger">
 
                     </div>
 
                 </div>
-
             </nav>
         </header>
 
-        <section class="main container">
-            <div class="text-heading">
-                <h1>
+        <section class="main">
+            <div class="text-heading container">
+                <h2>
                     Hey There.
                     I’m Wale
-                </h1>
+                </h2>
             </div>
-            <div class="text-subheading">
+            <div class="text-subheading container">
                 <h3>
                     I am a Software Developer
                 </h3>
             </div>
-            <div class="text-body">
+            <div class="text-body container">
                 <p>
                     I can help you build a product , feature or website Look through some of my work and experience! If
                     you
@@ -59,18 +64,129 @@
                 </p>
             </div>
 
-
-
-
-            <ul class="socials container">
-                <li><a href="#"><img src="images/github.png" alt="github icon"></a></li>
-                <li><a href="#"><img src="images/linkedin2.png" alt="linkedin icon"></a></li>
-                <li><a href="#"><img src="images/two.png" alt=""></a></li>
-                <li><a href="#"><img src="images/twitter.png" alt="twitter icon"></a></li>
-                <li><a href="#"><img src="images/medium.png" alt="medium logo"></a></li>
-            </ul>
         </section>
-    </section>
+
+
+        <ul class="socials container">
+            <li><a href="#"><img src="images/github.png" alt="github icon"></a></li>
+            <li><a href="#"><img src="images/linkedin2.png" alt="linkedin icon"></a></li>
+            <li><a href="#"><img src="images/two.png" alt=""></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt="twitter icon"></a></li>
+            <li><a href="#"><img src="images/medium.png" alt="medium logo"></a></li>
+        </ul>
+
+    </div>
+
+    <div class="grid-container">
+
+        <section id="portfolio">
+            <h1 class="portfolio-heading">My Recent Work</h1>
+            <hr>
+            <div class="portfolio-img">
+                <img src="images/placeholder.png" alt="">
+            </div>
+            <h2>
+                Multi-Post Stories
+            </h2>
+            <p class="portfolio-text">A daily selection of privately personalized reads; no accounts or sign-ups
+                required. has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+            </p>
+            <ul class="skill-list">
+                <li>css</li>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+            </ul>
+            <a href="#" class="btn skill-list-btn">See Project</a>
+        </section>
+
+        <section class="printing">
+            <div class="">
+                <h2>Profesional Art Printing Data</h2>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                    industry's standard</p>
+                <ul class="skill-list printing-list">
+                    <li>html</li>
+                    <li>bootstrap</li>
+                    <li>Ruby</li>
+                </ul>
+            </div>
+
+            <a href="#" class="btn_2">See Project</a>
+
+        </section>
+
+        <section class="printing">
+            <div class="">
+                <h2>Profesional Art Printing Data</h2>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                    industry's standard</p>
+                <ul class="skill-list printing-list">
+                    <li>html</li>
+                    <li>bootstrap</li>
+                    <li>Ruby</li>
+                </ul>
+            </div>
+
+            <a href="#" class="btn_2">See Project</a>
+
+        </section>
+
+
+    </div>
+
+    <div class="about-me-gen">
+        <section id="about-me">
+            <h1 class="container">About me</h1>
+            <p class="container">Hello I’m a software developer! I can help you build a product , feature or website
+                Look
+                through some of my
+                work and experience! If you like what you see and have a project you need coded, don’t hestiate to
+                contact
+                me.</p>
+            <a href="#" class="btn skill-list-btn container">Get My Resume</a>
+
+            <hr class="container line">
+        </section>
+
+        <div id="about-category">
+
+            <img class="language-bullet" src="images/Rectangle55.png" alt="">
+            <h2>Languages</h2>
+            <ul>
+                <li>Javascript</li>
+                <li>Ruby</li>
+                <li>html</li>
+                <li>Css</li>
+            </ul>
+
+            <img class="frameworks-bullet" src="images/Rectangle56.png" alt="">
+            <h2>Frameworks</h2>
+            <ul>
+                <li>Bootstrap</li>
+                <li>Ruby on Rails</li>
+                <li>RSPec</li>
+                <li>CapyBara</li>
+                <li>Selenium</li>
+            </ul>
+
+            <img class="skills-bullet" src="images/Rectangle57.png" alt="">
+            <h2>Skills</h2>
+            <ul>
+                <li>Codekit</li>
+                <li>Github</li>
+                <li>Codepen</li>
+                <li>Gitlab</li>
+                <li>Terminal</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
 
 </body>
 
