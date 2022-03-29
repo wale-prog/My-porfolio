@@ -279,7 +279,7 @@ body {
   margin-top: 120px;
   width: 375px;
   background-color: #1c1a19;
-  height: 1901px;
+  height: 1800px;
   color: #fff;
 }
 
@@ -293,6 +293,16 @@ body {
   font-size: 72px;
   font-weight: 400;
   line-height: 88px;
+}
+
+.contact-me h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  margin: 0 0 73px 0;
 }
 
 #about-me p {
@@ -345,6 +355,10 @@ body {
   text-align: center;
 }
 
+#footer li {
+  margin-right: 22.92px;
+}
+
 #about-category ul li {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -369,4 +383,104 @@ body {
   position: relative;
   top: 65px;
   left: 130px;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  background-color: #fff;
+}
+
+.contact-me {
+  margin: 0 24px;
+}
+
+.name {
+  width: 295px;
+  margin-bottom: 54px;
+}
+
+.email {
+  width: 295px;
+  margin-bottom: 54px;
+}
+
+input,
+textarea {
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.textarea {
+  margin-bottom: 36px;
+  width: 327px;
+  background-color: #fbf8f7;
+}
+
+.contact-me hr {
+  color: #dbd8d7;
+  position: relative;
+  bottom: 50px;
+}
+
+.form-btn {
+  background-color: #ff6b00;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 16px;
+  width: 131px;
+  cursor: pointer;
+  padding: 12px;
+  margin-left: 110px;
+  margin-bottom: 124px;
+}
+
+.form-btn:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.form-btn:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.form-btn:disabled {
+  background-color: #f4f1f0;
+  color: #585957;
+}
+
+::placeholder {
+  padding-top: 12px;
+  padding-left: 36px;
+  color: #3c3a39;
+}
+
+.footer-line {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+#footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 28px;
+}
+
+.last-line {
+  margin-bottom: 5px;
+  border-bottom: 5px solid #0d151e;
+  width: 134px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
 }
