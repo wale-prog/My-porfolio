@@ -190,7 +190,8 @@
             <form action="https://formspree.io/f/xpzbjqge" method="post">
                 <input class="name" type="text" name="Name" maxlength="" placeholder="Full name" required>
                 <hr>
-                <input class="email" type="email" name="Email" placeholder="Email address" required>
+                <input class="email" type="email" name="Email" placeholder="Email address" required
+                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}$">
                 <hr>
                 <textarea class="textarea" name="Message" cols="30" maxlength="500" rows="10"
                     placeholder="Enter text here" required></textarea>
