@@ -7,11 +7,30 @@
 
 - HTML
 - CSS
+- Git & Github
 
 ## Getting Started
 
-**There is no need to set up both the project and linters locally since it is already up and running on github.**
 **This project is part of a training series to highlight the need for proper documentation and best practices.**
+
+
+### Prerequisites
+- Have an IDE installed on your computer to be able to view the code locally.
+- Have a good working knowledge of Git and Github.
+
+### Setup
+- Open a command line terminal (Git bash preferrably) and navigate to a directory where you would like to save the work folder using cd.
+- Clone the repository with git clone https://github.com/wale-prog/My-porfolio.
+- To get the cuurent working tree, git fetch --all, then checkout to Contact branch.
+- Finally, display the content of the index.html by running a live server or by just opening the file using a web browser.
+
+### Install
+- IDE preferrably VSCODE
+
+### Usage
+- For any individual who wishes to set up a personal mobile portfolio.
+- For practice of HTML5 and CSS technologies.
+
 
 ## Author
 
@@ -31,8 +50,13 @@ Contributions, issues, and feature requests are welcome!
 
 Give a ⭐️ if you like this project!
 
-etc
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Shoutout to [@HSMathebula](https://github.com/HSMathebula) for being amazing.
+-Microverse.
 
 ## 📝 License
 
-This project is [MIT] licensed.
+
+This project is [MIT](./MIT.md) licensed.
