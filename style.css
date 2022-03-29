@@ -295,14 +295,14 @@ body {
   line-height: 88px;
 }
 
-.contact-me p {
+.contact-me h3 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
   color: #172b4d;
-  margin-bottom: 73px;
+  margin: 0 0 73px 0;
 }
 
 #about-me p {
