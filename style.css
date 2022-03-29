@@ -295,6 +295,16 @@ body {
   line-height: 88px;
 }
 
+.contact-me p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  margin-bottom: 73px;
+}
+
 #about-me p {
   font-family: 'Inter', sans-serif;
   color: #f4f5f7;
@@ -345,6 +355,10 @@ body {
   text-align: center;
 }
 
+#footer li {
+  margin-right: 22.92px;
+}
+
 #about-category ul li {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -373,39 +387,34 @@ body {
 
 #footer {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   padding-top: 120px;
-  background-color: #fff;  
-}
-
-.contact-me p {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
-  color: #172b4d;
-  margin-bottom: 73px;
+  background-color: #fff;
 }
 
 .contact-me {
-  margin:0 24px;
+  margin: 0 24px;
 }
 
 .name {
-  border: none;
   width: 295px;
-  margin-bottom: 54px;  
-}
-
-.email {
-  border: none;
-  width: 295px;  
   margin-bottom: 54px;
 }
 
+.email {
+  width: 295px;
+  margin-bottom: 54px;
+}
+
+input,
+textarea {
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
 .textarea {
-  border: none;  
   margin-bottom: 36px;
   width: 327px;
   background-color: #fbf8f7;
@@ -426,7 +435,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   font-size: 16px;
-  width: 107px;  
+  width: 131px;
   cursor: pointer;
   padding: 12px;
   margin-left: 110px;
@@ -450,17 +459,14 @@ body {
 }
 
 ::placeholder {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   padding-top: 12px;
-  padding-left: 12px;
+  padding-left: 36px;
+  color: #3c3a39;
 }
 
 .footer-line {
   margin-bottom: 25px;
-  border-bottom: 1px solid #dfe1e6 ;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 #footer ul {
@@ -468,10 +474,6 @@ body {
   justify-content: center;
   list-style: none;
   margin-bottom: 28px;
-}
-
-#footer li {
-  margin-right: 22.92px;
 }
 
 .last-line {
