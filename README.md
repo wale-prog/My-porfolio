@@ -21,11 +21,11 @@
 ### Setup
 - Open a command line terminal (Git bash preferrably) and navigate to a directory where you would like to save the work folder using cd.
 - Clone the repository with git clone https://github.com/wale-prog/My-porfolio.
-- To get the cuurent working tree, git fetch --all, then checkout to Contact branch.
+- To get the cuurent working tree, git fetch --all, then checkout to desktop_version branch.
 - Finally, display the content of the index.html by running a live server or by just opening the file using a web browser.
 
 ### Install
-- IDE preferrably VSCODE
+- IDE preferrably VScode
 
 ### Usage
 - For any individual who wishes to set up a personal mobile portfolio.
@@ -54,7 +54,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Shoutout to [@HSMathebula](https://github.com/HSMathebula) for being amazing.
--Microverse.
+- Microverse.
 
 ## 📝 License
 

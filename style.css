@@ -115,11 +115,6 @@ body {
   border-bottom: 1px solid #212121;
 }
 
-.portfolio-img img {
-  width: 684px;
-  height: 448px;
-}
-
 .portfolio-img {
   margin-top: 72px;
 }
@@ -503,6 +498,10 @@ textarea {
 
 @media (min-width: 768px){
 
+  body {
+    width: 1440px;
+  }
+
   .header div {
     display: none;
   }
@@ -626,6 +625,11 @@ textarea {
     padding: 0;    
   }
 
+  .portfolio-img img {
+    width: 684px;
+    height: 448px;
+  }
+
    .flex-port-text {
     width: 100%;
     padding: 0;
@@ -633,7 +637,8 @@ textarea {
   }
 
   .grid-container {
-    grid-template-columns: 327px 327px 327px;
+    grid-template-columns: 369px 369px 369px;
+    /* grid-template-columns: 327px 327px 327px; */
     margin-left: 141.5px;
     grid-template-rows: 435px 435px;
     gap: 24px;
@@ -646,6 +651,10 @@ textarea {
     margin: 0;
   }
 
+  .btn_2 {
+    width: 400px;
+  }
+
   .about-me-gen {
     background-image: url("images/about-me-bg.png");
     background-repeat: no-repeat;
@@ -654,13 +663,12 @@ textarea {
     margin-top: 130px;
     width: 100%;
     background-color: #1c1a19;
-    height: 1800px;
+    height: 1195px;
     color: #fff;
   }
 
   #about-me {
     margin: 130px 0 0 142px;    
-    padding-bottom: 300px;
     background-image: none;
   }
 
@@ -678,4 +686,98 @@ textarea {
     line-height: 82px;
   }
 
+  #about-me p {
+    font-family: 'Inter', sans-serif;
+    color: #f4f5f7;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    width: 566px;
+    margin-bottom: 36px;
+  }
+
+  .skill-list-btn {
+    width: 161px;
+  }
+
+  #about-category {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 24px;
+    right: 42px;
+  }
+
+  .line {
+    position: relative;
+    top: 139px;
+    margin-right: 153px;
+  }
+
+
+  #about-category h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    margin-top: 0;
+    
+  }
+
+  #about-category ul {
+    text-align: left;
+  }
+
+  .language-bullet {
+    position: relative;
+    top: 40px;
+    left: 0;
+  }
+ 
+  .frameworks-bullet {
+    position: relative;
+    top: 40px;
+    left: 12px;
+  }
+
+  .skills-bullet {
+    position: relative;
+    top: 40px;
+    left: 24px;
+  }
+
+  .contact-me {
+    margin-left: 135px;
+    display: flex;
+  }
+
+  .contact-me h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+    color: #172b4d;   
+    width: 455px;
+  }
+ 
+  .contact-me hr {
+    width: 684px;
+  }
+
+  .textarea {
+    width: 684px;
+    height: 114px;
+  }
+
+  .form-btn {    
+    width: 122px;    
+    /* margin-left: 336px;     */
+  }
+
+  .contact-me form {
+    width: 684px;
+  }
+ 
 }
