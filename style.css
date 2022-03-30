@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  width: 375px;
+  /* width: 100%; */
 }
 
 #first-page {
@@ -12,8 +12,11 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  top: 56px;
+  padding-top: 36px; 
+}
+
+.navbar ul {
+  display: none;
 }
 
 .container {
@@ -23,8 +26,8 @@ body {
 
 .header {
   background-color: #3e3c3c;
-  height: 92px;
-  width: 375px;
+  height: 72px;
+  width: 100%;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -108,8 +111,21 @@ body {
   margin-top: 120px;
 }
 
+.portfolio-header div {
+  border-bottom: 1px solid #212121;
+}
+
+.portfolio-img img {
+  width: 684px;
+  height: 448px;
+}
+
 .portfolio-img {
   margin-top: 72px;
+}
+
+.hidden {
+  display: none;
 }
 
 #portfolio {
@@ -132,7 +148,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-rows: 880px 386px 386px;
+  grid-template-rows: 386px 386px 386px 386px 386px 386px;
   grid-template-columns: 375px;
   gap: 48px;
 }
@@ -289,7 +305,7 @@ body {
   color: #ff6b00;
   width: 327px;
   font-family: 'Crete Round', serif;
-  letter-spacing: 00.37px;
+  letter-spacing: 0.37px;
   font-size: 72px;
   font-weight: 400;
   line-height: 88px;
@@ -483,4 +499,183 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
+}
+
+@media (min-width: 768px){
+
+  .header div {
+    display: none;
+  }
+
+  .navbar ul {
+    display: inline;    
+    display: flex;
+    width: 295px;
+    align-content: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 12px;
+    margin-right: 130px;
+  }
+
+  .navbar ul a {    
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;     
+    line-height: 20px;
+  }
+
+  .navbar ul li {
+    list-style: none;
+  }
+
+  .navbar {
+    padding-left: 130px;
+    padding-top: 24px;
+  }
+
+  .main {
+    background-image: none;    
+    height: 798px;
+    margin-left: 143px;
+    width: 566px;
+    top: 264px;
+  }
+
+  .main h2 {   
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .main h3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    -weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .main p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  #first-page {
+    background-image: url("images/desktop-bg.png");
+    background-position: right top;    
+    background-repeat: no-repeat;
+    height: 870px;
+  }
+
+  .socials {
+    flex-direction: column;
+    margin-left: 12px;  
+    padding-bottom: 0;
+    position: relative;
+    bottom: 413px;
+    
+  }
+
+  .socials li {
+    margin-bottom: 18px;
+  }
+
+  .portfolio-header div {
+    position: relative;
+    bottom: 60px;
+    margin-right: 0;
+    min-width: 794px;   
+  }
+
+  .portfolio-header h1 {
+    margin-left: 153.5px;
+    width: 315px;
+  }
+  
+  .hidden {
+    display: inline;
+  }
+
+  .portfoilio-image {
+    display: none;
+  }
+
+  .portfolio-img {
+    margin-left: 141px;
+    margin-top: 114px;
+    margin-right: 24px;
+  }
+
+  .flex-port {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  #portfolio {
+    margin: 0;
+    padding: 0;    
+  }
+
+   .flex-port-text {
+    width: 100%;
+    padding: 0;
+    margin-top: 80px;
+  }
+
+  .grid-container {
+    grid-template-columns: 327px 327px 327px;
+    margin-left: 141.5px;
+    grid-template-rows: 435px 435px;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .printing {
+    background-image: url('images/background.png');
+    height: 386px;
+    margin: 0;
+  }
+
+  .about-me-gen {
+    background-image: url("images/about-me-bg.png");
+    background-repeat: no-repeat;
+    background-size: 585.52px 352.38px;
+    background-position: right 10%;
+    margin-top: 130px;
+    width: 100%;
+    background-color: #1c1a19;
+    height: 1800px;
+    color: #fff;
+  }
+
+  #about-me {
+    margin: 130px 0 0 142px;    
+    padding-bottom: 300px;
+    background-image: none;
+  }
+
+  #about-me p {
+    font-family: 'Inter', sans-serif;
+    color: #f4f5f7;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 327px;
+    margin-bottom: 36px;
+  }
+
+  #about-me h1{
+    line-height: 82px;
+  }
+
 }
