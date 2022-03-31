@@ -12,7 +12,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding-top: 36px; 
+  padding-top: 36px;
 }
 
 .navbar ul {
@@ -128,10 +128,6 @@ body {
   display: inline-block;
 }
 
-.card1 a {
-  display: inline-block;
-}
-
 #portfolio {
   color: #091e42;
   margin-left: 24px;
@@ -231,7 +227,7 @@ body {
 }
 
 .printing {
-  background-image: url('images/background.png'); 
+  background-image: url('images/background.png');
   margin: 0 24px;
 }
 
@@ -286,11 +282,7 @@ body {
 }
 
 #about-me {
-  background-image: url("images/Group.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-position-y: 380px;
-  padding-bottom: 300px;
+  box-sizing: border-box;
 }
 
 .about-me-gen {
@@ -299,6 +291,10 @@ body {
   background-color: #1c1a19;
   height: 1800px;
   color: #fff;
+  background-image: url("images/Group.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-position-y: 380px;
 }
 
 #about-me h1 {
@@ -329,7 +325,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  /* width: 327px; */
   margin-bottom: 36px;
 }
 
@@ -349,12 +344,18 @@ body {
 }
 
 .line {
-  position: relative;
-  top: 220px;
+  border-bottom: 1px solid;
+  margin: 221px 24px 0 24px;
+}
+
+.card1 a {
+  display: block;
 }
 
 #about-category {
   color: #fff;
+  margin-top: 48px;
+  padding: 0;
 }
 
 #about-category ul {
@@ -503,8 +504,7 @@ textarea {
   border-radius: 10px;
 }
 
-@media (min-width: 768px){
-
+@media (min-width: 768px) {
   body {
     width: 768px;
   }
@@ -516,10 +516,9 @@ textarea {
   .nonvisible {
     visibility: hidden;
   }
- 
 
   .navbar ul {
-    display: inline;    
+    display: inline;
     display: flex;
     width: 295px;
     align-content: center;
@@ -529,14 +528,22 @@ textarea {
     margin-right: 130px;
   }
 
-  .navbar ul a {    
+  .card1 a {
+    display: inline-block;
+  }
+
+  .navbar ul a {
     color: #fff;
     text-decoration: none;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;     
+    font-size: 15px;
     line-height: 20px;
+  }
+
+  .socials li {
+    margin-bottom: 18px;
   }
 
   .navbar ul li {
@@ -549,16 +556,15 @@ textarea {
   }
 
   .main {
-    background-image: none;    
+    background-image: none;
     height: 798px;
     margin-left: 143px;
     width: 566px;
     top: 264px;
   }
 
-  .main h2 {   
-    font-family: 'Crete Round';
-    font-style: normal;
+  .main h2 {
+    font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
@@ -567,14 +573,13 @@ textarea {
   .main h3 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    -weight: 500;
+    font-weight: 500;
     font-size: 32px;
     line-height: 44px;
   }
 
   .main p {
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
@@ -582,7 +587,7 @@ textarea {
 
   #first-page {
     background-image: url("images/desktop-bg.png");
-    background-position: right top;    
+    background-position: right top;
     background-repeat: no-repeat;
     height: 870px;
     width: 1440px;
@@ -590,29 +595,24 @@ textarea {
 
   .socials {
     flex-direction: column;
-    margin-left: 12px;  
+    margin-left: 12px;
     padding-bottom: 0;
     position: relative;
     bottom: 413px;
-    
-  }
-
-  .socials li {
-    margin-bottom: 18px;
   }
 
   .portfolio-header div {
     position: relative;
     bottom: 60px;
     margin-left: 492.5px;
-    width: 794px;   
+    width: 794px;
   }
 
   .portfolio-header h1 {
     margin-left: 153.5px;
     width: 315px;
   }
-  
+
   .hidden-mobile {
     display: block;
   }
@@ -635,7 +635,7 @@ textarea {
 
   #portfolio {
     margin: 0;
-    padding: 0;    
+    padding: 0;
   }
 
   .portfolio-img img {
@@ -647,7 +647,7 @@ textarea {
     width: 448px;
   }
 
-   .flex-port-text {
+  .flex-port-text {
     width: 100%;
     padding: 0;
     margin-top: 80px;
@@ -662,7 +662,7 @@ textarea {
   }
 
   .printing {
-    background-image: none;    
+    background-image: none;
     margin: 0;
   }
 
@@ -682,12 +682,11 @@ textarea {
     background-image: url('images/portfolio-bg4.png');
   }
 
-  .btn_2 {        
+  .btn_2 {
     padding: 17px 134.92px;
     position: relative;
-    bottom: 62px;    
+    bottom: 62px;
   }
-
 
   .about-me-gen {
     background-image: url("images/about-me-bg.png");
@@ -698,25 +697,17 @@ textarea {
     width: 1440px;
     background-color: #1c1a19;
     height: 1195px;
+
+    /* margin: 0; */
     color: #fff;
   }
 
   #about-me {
-    margin: 130px 0 0 142px;    
+    margin: 130px 0 0 130px;
     background-image: none;
   }
 
-  #about-me p {
-    font-family: 'Inter', sans-serif;
-    color: #f4f5f7;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    width: 327px;
-    margin-bottom: 36px;
-  }
-
-  #about-me h1{
+  #about-me h1 {
     line-height: 82px;
   }
 
@@ -736,49 +727,62 @@ textarea {
 
   #about-category {
     display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    bottom: 24px;
-    right: 42px;
+    margin-left: 130px;
+    margin-top: 146px;
   }
 
   .line {
-    position: relative;
-    top: 139px;
+    border-bottom: 1px solid;
+    padding-top: 139px;
     margin-right: 153px;
+    margin-left: 142px;
+    margin-top: 0;
   }
 
+  .printing div {
+    margin-top: 178px;
+  }
 
-  #about-category h2 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    text-align: center;
-    margin-top: 0;
-    
+  .card3 div {
+    margin-top: 221px;
+  }
+
+  #about-category div {
+    margin-right: 230.54px;
   }
 
   #about-category ul {
     text-align: left;
   }
 
+  #about-category h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    position: relative;
+    left: 48.46px;
+    padding-left: 24px;
+    text-align: left;
+    margin-top: 0;
+  }
+
   .language-bullet {
     position: relative;
     top: 40px;
-    left: 0;
+    left: 36.46px;
   }
- 
+
   .frameworks-bullet {
     position: relative;
     top: 40px;
-    left: 12px;
+    left: 36.46px;
   }
 
   .skills-bullet {
     position: relative;
     top: 40px;
-    left: 24px;
+    left: 36.46px;
   }
 
   .contact-me {
@@ -792,10 +796,10 @@ textarea {
     font-size: 40px;
     line-height: 52px;
     text-align: left;
-    color: #172b4d;   
+    color: #172b4d;
     width: 455px;
   }
- 
+
   .contact-me hr {
     width: 684px;
   }
@@ -809,10 +813,10 @@ textarea {
     height: 114px;
   }
 
-  .form-btn {    
-    width: 122px;    
+  .form-btn {
+    width: 122px;
     margin-left: 0;
-    margin-bottom: 166px;  
+    margin-bottom: 166px;
   }
 
   .contact-me form {
@@ -826,16 +830,4 @@ textarea {
   .last-line {
     display: none;
   }
-
-  .printing div {
-    margin-top: 178px;
-  }
-  .card1 a {
-  display: inline-block;
-  }
-
-  .card3 div {
-  margin-top: 221px;
-  }
-  
 }
