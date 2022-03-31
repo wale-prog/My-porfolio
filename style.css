@@ -5,6 +5,10 @@ body {
 }
 
 #first-page {
+  background-image: url("images/background-image1.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-position-y: 450px;
   background-color: #1c1a19;
   color: #fff;
 }
@@ -59,13 +63,8 @@ body {
 }
 
 .main {
-  background-image: url("images/background-image1.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  position: relative;
-  top: 200px;
-  height: 600px;
-  background-position-y: 265px;
+  padding-top: 192px;
+  width: 375px;
 }
 
 .logo {
@@ -85,6 +84,7 @@ body {
   padding-left: 3%;
   padding-bottom: 120px;
   list-style: none;
+  margin-top: 22px;
 }
 
 .hamburger {
@@ -281,10 +281,6 @@ body {
   margin-top: 12px;
 }
 
-#about-me {
-  box-sizing: border-box;
-}
-
 .about-me-gen {
   margin-top: 120px;
   width: 100%;
@@ -301,7 +297,6 @@ body {
   padding-top: 120px;
   padding-bottom: 24px;
   color: #ff6b00;
-  width: 327px;
   font-family: 'Crete Round', serif;
   letter-spacing: 0.37px;
   font-size: 72px;
@@ -506,7 +501,7 @@ textarea {
 
 @media (min-width: 768px) {
   body {
-    width: 768px;
+    width: 100%;
   }
 
   .nodisplay-desktop {
@@ -556,11 +551,10 @@ textarea {
   }
 
   .main {
-    background-image: none;
+    padding-top: 336px;
     height: 798px;
     margin-left: 143px;
-    width: 566px;
-    top: 264px;
+    width: 55%;
   }
 
   .main h2 {
@@ -568,6 +562,7 @@ textarea {
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
+    width: 60%;
   }
 
   .main h3 {
@@ -576,6 +571,7 @@ textarea {
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
+    width: 80%;
   }
 
   .main p {
@@ -583,6 +579,7 @@ textarea {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
+    width: 80%;
   }
 
   #first-page {
@@ -590,7 +587,6 @@ textarea {
     background-position: right top;
     background-repeat: no-repeat;
     height: 870px;
-    width: 1440px;
   }
 
   .socials {
@@ -598,7 +594,7 @@ textarea {
     margin-left: 12px;
     padding-bottom: 0;
     position: relative;
-    bottom: 413px;
+    bottom: 700px;
   }
 
   .portfolio-header div {
@@ -631,6 +627,7 @@ textarea {
     display: flex;
     margin: 0;
     padding: 0;
+    width: 100%;
   }
 
   #portfolio {
@@ -639,12 +636,12 @@ textarea {
   }
 
   .portfolio-img img {
-    width: 684px;
-    height: 448px;
+    /* width: 684px;
+    height: 448px; */
   }
 
   .portfolio-text {
-    width: 448px;
+    /* width: 448px; */
   }
 
   .flex-port-text {
@@ -694,21 +691,19 @@ textarea {
     background-size: 585.52px 352.38px;
     background-position: right 10%;
     margin-top: 130px;
-    width: 1440px;
+    width: 100%;
     background-color: #1c1a19;
     height: 1195px;
-
-    /* margin: 0; */
     color: #fff;
   }
 
   #about-me {
     margin: 130px 0 0 130px;
-    background-image: none;
   }
 
   #about-me h1 {
     line-height: 82px;
+    width: 40%;
   }
 
   #about-me p {
@@ -717,7 +712,7 @@ textarea {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    width: 566px;
+    width: 35%;
     margin-bottom: 36px;
   }
 
@@ -805,7 +800,7 @@ textarea {
   }
 
   #footer {
-    width: 1440px;
+    width: 100%;
   }
 
   .textarea {
