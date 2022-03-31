@@ -1,6 +1,7 @@
 # My-porfolio
 
 > This is My Portfolio, a quick view into who I am and my capabilities.
+> The webpage is responsive and compartible with both 375px and 1440px screens.
 
 
 ## Built With
