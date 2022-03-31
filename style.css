@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  /* width: 100%; */
+  width: 100%;
 }
 
 #first-page {
@@ -117,10 +117,19 @@ body {
 
 .portfolio-img {
   margin-top: 72px;
+  margin-right: 24px;
 }
 
-.hidden {
+.hidden-mobile {
   display: none;
+}
+
+.nodisplay-desktop {
+  display: inline-block;
+}
+
+.card1 a {
+  display: inline-block;
 }
 
 #portfolio {
@@ -222,8 +231,7 @@ body {
 }
 
 .printing {
-  background-image: url('images/background.png');
-  height: 386px;
+  background-image: url('images/background.png'); 
   margin: 0 24px;
 }
 
@@ -246,9 +254,8 @@ body {
 }
 
 .btn_2 {
-  width: 327px;
-  padding: 12px 118.7px;
-  height: 48px;
+  width: 100px;
+  padding: 12px 113.5px;
   text-decoration: none;
   color: #fff;
   font-family: 'Inter', sans-serif;
@@ -288,7 +295,7 @@ body {
 
 .about-me-gen {
   margin-top: 120px;
-  width: 375px;
+  width: 100%;
   background-color: #1c1a19;
   height: 1800px;
   color: #fff;
@@ -322,7 +329,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  width: 327px;
+  /* width: 327px; */
   margin-bottom: 36px;
 }
 
@@ -476,7 +483,7 @@ textarea {
 }
 
 .footer-line {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   border-bottom: 1px solid #dfe1e6;
 }
 
@@ -499,12 +506,17 @@ textarea {
 @media (min-width: 768px){
 
   body {
-    width: 1440px;
+    width: 768px;
   }
 
-  .header div {
+  .nodisplay-desktop {
     display: none;
   }
+
+  .nonvisible {
+    visibility: hidden;
+  }
+ 
 
   .navbar ul {
     display: inline;    
@@ -573,6 +585,7 @@ textarea {
     background-position: right top;    
     background-repeat: no-repeat;
     height: 870px;
+    width: 1440px;
   }
 
   .socials {
@@ -591,8 +604,8 @@ textarea {
   .portfolio-header div {
     position: relative;
     bottom: 60px;
-    margin-right: 0;
-    min-width: 794px;   
+    margin-left: 492.5px;
+    width: 794px;   
   }
 
   .portfolio-header h1 {
@@ -600,8 +613,8 @@ textarea {
     width: 315px;
   }
   
-  .hidden {
-    display: inline;
+  .hidden-mobile {
+    display: block;
   }
 
   .portfoilio-image {
@@ -630,6 +643,10 @@ textarea {
     height: 448px;
   }
 
+  .portfolio-text {
+    width: 448px;
+  }
+
    .flex-port-text {
     width: 100%;
     padding: 0;
@@ -638,7 +655,6 @@ textarea {
 
   .grid-container {
     grid-template-columns: 369px 369px 369px;
-    /* grid-template-columns: 327px 327px 327px; */
     margin-left: 141.5px;
     grid-template-rows: 435px 435px;
     gap: 24px;
@@ -646,14 +662,32 @@ textarea {
   }
 
   .printing {
-    background-image: url('images/background.png');
-    height: 386px;
+    background-image: none;    
     margin: 0;
   }
 
-  .btn_2 {
-    width: 400px;
+  .card1 {
+    background-image: url("images/portfolio-bg1.png");
   }
+
+  .card2 {
+    background-image: url("images/portfolio-bg2.png");
+  }
+
+  .card3 {
+    background-image: url("images/portfolio-bg3.png");
+  }
+
+  .card4 {
+    background-image: url('images/portfolio-bg4.png');
+  }
+
+  .btn_2 {        
+    padding: 17px 134.92px;
+    position: relative;
+    bottom: 62px;    
+  }
+
 
   .about-me-gen {
     background-image: url("images/about-me-bg.png");
@@ -661,7 +695,7 @@ textarea {
     background-size: 585.52px 352.38px;
     background-position: right 10%;
     margin-top: 130px;
-    width: 100%;
+    width: 1440px;
     background-color: #1c1a19;
     height: 1195px;
     color: #fff;
@@ -766,6 +800,10 @@ textarea {
     width: 684px;
   }
 
+  #footer {
+    width: 1440px;
+  }
+
   .textarea {
     width: 684px;
     height: 114px;
@@ -773,11 +811,31 @@ textarea {
 
   .form-btn {    
     width: 122px;    
-    /* margin-left: 336px;     */
+    margin-left: 0;
+    margin-bottom: 166px;  
   }
 
   .contact-me form {
     width: 684px;
   }
- 
+
+  .footer-line {
+    margin-bottom: 28.03px;
+  }
+
+  .last-line {
+    display: none;
+  }
+
+  .printing div {
+    margin-top: 178px;
+  }
+  .card1 a {
+  display: inline-block;
+  }
+
+  .card3 div {
+  margin-top: 221px;
+  }
+  
 }

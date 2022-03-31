@@ -10,9 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -26,7 +23,7 @@
         <header class="header">
             <nav class="navbar container">
                 <a class="logo" href="#">Olawale Olapetan</a>
-                <div class="">
+                <div class="nodisplay-desktop">
                     <div class="hamburger">
 
                     </div>
@@ -40,9 +37,9 @@
 
                 </div>
                 <ul>
-                    <li> <a href="">Portoflio</a></li>
-                    <li> <a href="">About</a></li>
-                    <li> <a href="">Contact</a></li>
+                    <li> <a href="#portfolio">Portoflio</a></li>
+                    <li> <a href="#about-me">About</a></li>
+                    <li> <a href="#footer">Contact</a></li>
                     <li> <a href=""><img src="images/Mail.png" alt="Mail Icon"></a></li>
                 </ul>
             </nav>
@@ -92,8 +89,8 @@
             </div>
             <div class="flex-port">
                 <div class="portfolio-img">
-                    <img class="portfoilio-image" src="images/placeholder.png" alt="">
-                    <img class="hidden" src="images/placeholder-desktop.png" alt="">
+                    <img class="portfolio-image nodisplay-desktop" src="images/placeholder.png" alt="">
+                    <img class="hidden-mobile" src="images/placeholder-desktop.png" alt="">
                 </div>
                 <div class="flex-port-text">
                     <h2>
@@ -119,8 +116,8 @@
         </section>
 
         <section class="grid-container">
-            <section class="printing">
-                <div class="">
+            <section class="printing card1">
+                <div class="nonvisible">
                     <h2>Profesional Art Printing Data</h2>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                         industry's standard</p>
@@ -134,12 +131,10 @@
                 <a href="#" class="btn_2">See Project</a>
             </section>
 
-
-
-
-            <section class="printing">
+            <section class="printing card2">
                 <div class="">
-                    <h2>Profesional Art Printing Data</h2>
+                    <h2 class="nodisplay-desktop">Profesional Art Printing Data</h2>
+                    <h2 class="hidden-mobile">Data Dashboard Healthcare</h2>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                         industry's standard</p>
                     <ul class="skill-list printing-list">
@@ -149,11 +144,26 @@
                     </ul>
                 </div>
 
-                <a href="#" class="btn_2">See Project</a>
+                <a href="#" class="btn_2 nodisplay-desktop">See Project</a>
 
             </section>
 
-            <section class="printing">
+            <section class="printing card3">
+                <div class="">
+                    <h2 class="nodisplay-desktop">Profesional Art Printing Data</h2>
+                    <h2 class="hidden-mobile">Website Portfolio</h2>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                        industry's standard</p>
+                    <ul class="skill-list printing-list">
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                </div>
+                <a href="#" class="btn_2 nodisplay-desktop">See Project</a>
+            </section>
+
+            <section class="printing card4">
                 <div class="">
                     <h2>Profesional Art Printing Data</h2>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
@@ -165,13 +175,14 @@
                     </ul>
                 </div>
 
-                <a href="#" class="btn_2">See Project</a>
+                <a href="#" class="btn_2 nodisplay-desktop">See Project</a>
 
             </section>
 
-            <section class="printing">
+            <section class="printing card2">
                 <div class="">
-                    <h2>Profesional Art Printing Data</h2>
+                    <h2 class="nodisplay-desktop">Profesional Art Printing Data</h2>
+                    <h2 class="hidden-mobile">Data Dashboard Healthcare</h2>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                         industry's standard</p>
                     <ul class="skill-list printing-list">
@@ -181,13 +192,14 @@
                     </ul>
                 </div>
 
-                <a href="#" class="btn_2">See Project</a>
+                <a href="#" class="btn_2 nodisplay-desktop">See Project</a>
 
             </section>
 
-            <section class="printing">
+            <section class="printing card3">
                 <div class="">
-                    <h2>Profesional Art Printing Data</h2>
+                    <h2 class="nodisplay-desktop">Profesional Art Printing Data</h2>
+                    <h2 class="hidden-mobile">Website Portfolio</h2>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                         industry's standard</p>
                     <ul class="skill-list printing-list">
@@ -197,23 +209,7 @@
                     </ul>
                 </div>
 
-                <a href="#" class="btn_2">See Project</a>
-
-            </section>
-
-            <section class="printing">
-                <div class="">
-                    <h2>Profesional Art Printing Data</h2>
-                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                        industry's standard</p>
-                    <ul class="skill-list printing-list">
-                        <li>html</li>
-                        <li>bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                </div>
-
-                <a href="#" class="btn_2">See Project</a>
+                <a href="#" class="btn_2 nodisplay-desktop">See Project</a>
 
             </section>
         </section>
