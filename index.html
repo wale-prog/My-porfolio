@@ -10,9 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -26,7 +23,7 @@
         <header class="header">
             <nav class="navbar container">
                 <a class="logo" href="#">Olawale Olapetan</a>
-                <div class="">
+                <div class="nodisplay-desktop">
                     <div class="hamburger">
 
                     </div>
@@ -39,6 +36,12 @@
                     </div>
 
                 </div>
+                <ul>
+                    <li> <a href="#portfolio">Portoflio</a></li>
+                    <li> <a href="#about-me">About</a></li>
+                    <li> <a href="#footer">Contact</a></li>
+                    <li> <a href=""><img src="images/Mail.png" alt="Mail Icon"></a></li>
+                </ul>
             </nav>
         </header>
 
@@ -77,60 +80,138 @@
 
     </div>
 
-    <div class="grid-container">
+    <div class="">
 
         <section id="portfolio">
-            <h1 class="portfolio-heading">My Recent Work</h1>
-            <hr>
-            <div class="portfolio-img">
-                <img src="images/placeholder.png" alt="">
+            <div class="portfolio-header">
+                <h1 class="portfolio-heading">My Recent Works</h1>
+                <div></div>
             </div>
-            <h2>
-                Multi-Post Stories
-            </h2>
-            <p class="portfolio-text">A daily selection of privately personalized reads; no accounts or sign-ups
-                required. has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-            </p>
-            <ul class="skill-list">
-                <li>css</li>
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-            </ul>
-            <a href="#" class="btn skill-list-btn">See Project</a>
-        </section>
-
-        <section class="printing">
-            <div class="">
-                <h2>Profesional Art Printing Data</h2>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                    industry's standard</p>
-                <ul class="skill-list printing-list">
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                </ul>
+            <div class="flex-port">
+                <div class="portfolio-img">
+                    <img class="portfolio-image nodisplay-desktop" src="images/placeholder.png" alt="">
+                    <img class="hidden-mobile" src="images/placeholder-desktop.png" alt="">
+                </div>
+                <div class="flex-port-text">
+                    <h2>
+                        Multi-Post Stories
+                    </h2>
+                    <p class="portfolio-text">A daily selection of privately personalized reads; no accounts or sign-ups
+                        required. has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a standard
+                        dummy text.
+                    </p>
+                    <ul class="skill-list">
+                        <li>css</li>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                    <a href="#" class="btn skill-list-btn">See Project</a>
+                </div>
             </div>
 
-            <a href="#" class="btn_2">See Project</a>
+
 
         </section>
 
-        <section class="printing">
-            <div class="">
-                <h2>Profesional Art Printing Data</h2>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                    industry's standard</p>
-                <ul class="skill-list printing-list">
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                </ul>
+        <section class="grid-container">
+            <div class="printing card1">
+                <div class="nonvisible">
+                    <h2>Profesional Art Printing Data</h2>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                        industry's standard</p>
+                    <ul class="skill-list printing-list">
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                </div>
+
+                <a href="#" class="btn_2">See Project</a>
             </div>
 
-            <a href="#" class="btn_2">See Project</a>
+            <section class="printing card2">
+                <div class="">
+                    <h2 class="nodisplay-desktop">Profesional Art Printing Data</h2>
+                    <h2 class="hidden-mobile">Data Dashboard Healthcare</h2>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                        industry's standard</p>
+                    <ul class="skill-list printing-list">
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                </div>
 
+                <a href="#" class="btn_2 nodisplay-desktop">See Project</a>
+
+            </section>
+
+            <section class="printing card3">
+                <div class="">
+                    <h2 class="nodisplay-desktop">Profesional Art Printing Data</h2>
+                    <h2 class="hidden-mobile">Website Portfolio</h2>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                        industry's standard</p>
+                    <ul class="skill-list printing-list">
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                </div>
+                <a href="#" class="btn_2 nodisplay-desktop">See Project</a>
+            </section>
+
+            <section class="printing card4">
+                <div class="">
+                    <h2>Profesional Art Printing Data</h2>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                        industry's standard</p>
+                    <ul class="skill-list printing-list">
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                </div>
+
+                <a href="#" class="btn_2 nodisplay-desktop">See Project</a>
+
+            </section>
+
+            <section class="printing card2">
+                <div class="">
+                    <h2 class="nodisplay-desktop">Profesional Art Printing Data</h2>
+                    <h2 class="hidden-mobile">Data Dashboard Healthcare</h2>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                        industry's standard</p>
+                    <ul class="skill-list printing-list">
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                </div>
+
+                <a href="#" class="btn_2 nodisplay-desktop">See Project</a>
+
+            </section>
+
+            <section class="printing card3">
+                <div class="">
+                    <h2 class="nodisplay-desktop">Profesional Art Printing Data</h2>
+                    <h2 class="hidden-mobile">Website Portfolio</h2>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                        industry's standard</p>
+                    <ul class="skill-list printing-list">
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                </div>
+
+                <a href="#" class="btn_2 nodisplay-desktop">See Project</a>
+
+            </section>
         </section>
 
 
@@ -146,40 +227,46 @@
                 contact
                 me.</p>
             <a href="#" class="btn skill-list-btn container">Get My Resume</a>
-
-            <hr class="container line">
         </section>
+        <div class="container line"></div>
 
         <div id="about-category">
 
-            <img class="language-bullet" src="images/Rectangle55.png" alt="">
-            <h2>Languages</h2>
-            <ul>
-                <li>Javascript</li>
-                <li>Ruby</li>
-                <li>html</li>
-                <li>Css</li>
-            </ul>
+            <div class="language">
+                <img class="language-bullet" src="images/Rectangle55.png" alt="">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Javascript</li>
+                    <li>Ruby</li>
+                    <li>html</li>
+                    <li>Css</li>
+                </ul>
+            </div>
 
-            <img class="frameworks-bullet" src="images/Rectangle56.png" alt="">
-            <h2>Frameworks</h2>
-            <ul>
-                <li>Bootstrap</li>
-                <li>Ruby on Rails</li>
-                <li>RSPec</li>
-                <li>CapyBara</li>
-                <li>Selenium</li>
-            </ul>
+            <div class="frameworks">
+                <img class="frameworks-bullet" src="images/Rectangle56.png" alt="">
+                <h2>Frameworks</h2>
+                <ul>
+                    <li>Bootstrap</li>
+                    <li>Ruby on Rails</li>
+                    <li>RSPec</li>
+                    <li>CapyBara</li>
+                    <li>Selenium</li>
+                </ul>
+            </div>
 
-            <img class="skills-bullet" src="images/Rectangle57.png" alt="">
-            <h2>Skills</h2>
-            <ul>
-                <li>Codekit</li>
-                <li>Github</li>
-                <li>Codepen</li>
-                <li>Gitlab</li>
-                <li>Terminal</li>
-            </ul>
+            <div class="skills">
+                <img class="skills-bullet" src="images/Rectangle57.png" alt="">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Codekit</li>
+                    <li>Github</li>
+                    <li>Codepen</li>
+                    <li>Gitlab</li>
+                    <li>Terminal</li>
+                </ul>
+            </div>
+
 
         </div>
 
