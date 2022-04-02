@@ -454,12 +454,15 @@ textarea {
   padding: 12px;
   margin-left: 110px;
   margin-bottom: 124px;
+  transition: width 0.5s, height 4s;
+  transition-timing-function: linear;
 }
 
 .form-btn:hover {
   background-color: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
+  width: 170px;
 }
 
 .form-btn:active {
@@ -535,6 +538,16 @@ textarea {
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
+    width: 15px;
+    transition-property: margin-right, margin-left;
+    transition-duration: 2s;
+  }
+
+  .navbar ul a:hover {
+    color: #ff6800;
+    margin-right: 20px;
+    width: 20px;
+    margin-left: 20px;
   }
 
   .socials li {
@@ -635,15 +648,6 @@ textarea {
     padding: 0;
   }
 
-  .portfolio-img img {
-    /* width: 684px;
-    height: 448px; */
-  }
-
-  .portfolio-text {
-    /* width: 448px; */
-  }
-
   .flex-port-text {
     width: 100%;
     padding: 0;
@@ -665,6 +669,11 @@ textarea {
 
   .card1 {
     background-image: url("images/portfolio-bg1.png");
+  }
+
+  .card1:hover {
+    width: 400px;
+    height: 500px;
   }
 
   .card2 {
