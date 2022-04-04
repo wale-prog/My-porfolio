@@ -671,11 +671,6 @@ textarea {
     background-image: url("images/portfolio-bg1.png");
   }
 
-  .card1:hover {
-    width: 400px;
-    height: 500px;
-  }
-
   .card2 {
     background-image: url("images/portfolio-bg2.png");
   }
