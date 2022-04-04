@@ -10,6 +10,10 @@
 - CSS
 - Git & Github
 
+## Live Demo
+[Live Demo Link](https://wale-prog.github.io/My-porfolio/)
+
+
 ## Getting Started
 
 **This project is part of a training series to highlight the need for proper documentation and best practices.**
