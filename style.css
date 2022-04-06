@@ -539,7 +539,7 @@ textarea {
     font-size: 15px;
     line-height: 20px;
     width: 15px;
-    transition-property: margin-right, margin-left;
+    transition-property: color, margin-right, margin-left;
     transition-duration: 2s;
   }
 
