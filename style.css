@@ -822,11 +822,11 @@ textarea {
     width: 684px;
   }
 
-  .footer-line {
-    margin-bottom: 28.03px;
-  }
-
   .last-line {
     display: none;
+  }
+
+  .footer-line {
+    margin-bottom: 28.03px;
   }
 }
