@@ -37,7 +37,7 @@
 - For practice of HTML5 and CSS technologies.
 
 
-## Author
+## Author 1
 
 👤 **Wale Olapetan**
 
@@ -45,8 +45,14 @@
 - Twitter: [@Wale_Petan](https://twitter.com/Wale_Petan)
 
 
-## 🤝 Contributing
+👤 ## Author 2
 
+- GitHub: [@medsonmoombe](https://github.com/medsonmoombe)
+- Twitter: [@emmanue78388405](https://twitter.com/@emmanue78388405)
+- LinkedIn: [Emmanuel moombe](https://linkedin.com/in/Emmanuel moombe)
+
+
+## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
 
