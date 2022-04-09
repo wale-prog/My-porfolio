@@ -210,7 +210,7 @@ body {
 }
 
 .btn {
-  background-color: #ff6b00;
+  background-color: #5c0b07;
   border: none;
 }
 
@@ -258,7 +258,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   font-size: 16px;
-  background-color: #ff6b00;
+  background-color: #5c0b07;
 }
 
 .printing p {
@@ -441,7 +441,7 @@ textarea {
 }
 
 .form-btn {
-  background-color: #ff6b00;
+  background-color: #5c0b07;
   border: none;
   text-decoration: none;
   color: #fff;
@@ -539,7 +539,7 @@ textarea {
     font-size: 15px;
     line-height: 20px;
     width: 15px;
-    transition-property: margin-right, margin-left;
+    transition-property: color, margin-right, margin-left;
     transition-duration: 2s;
   }
 
@@ -822,11 +822,11 @@ textarea {
     width: 684px;
   }
 
-  .footer-line {
-    margin-bottom: 28.03px;
-  }
-
   .last-line {
     display: none;
+  }
+
+  .footer-line {
+    margin-bottom: 28.03px;
   }
 }
