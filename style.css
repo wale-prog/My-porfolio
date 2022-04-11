@@ -19,10 +19,6 @@ body {
   padding-top: 36px;
 }
 
-.navbar ul {
-  display: none;
-}
-
 .container {
   margin: 0 24px;
   overflow: hidden;
@@ -210,7 +206,7 @@ body {
 }
 
 .btn {
-  background-color: #5c0b07;
+  background-color: #FF6b00;
   border: none;
 }
 
@@ -441,7 +437,7 @@ textarea {
 }
 
 .form-btn {
-  background-color: #5c0b07;
+  background-color: #ff6b00;
   border: none;
   text-decoration: none;
   color: #fff;
@@ -502,6 +498,75 @@ textarea {
   border-radius: 10px;
 }
 
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: left;
+  position: fixed;
+  right: -200%;
+  top: 0;
+  padding-top: 76px;
+  gap: 0;
+  background-color: #3c3a39;
+  width: 100%;
+  transition: 0.3s;
+  height: 400px;
+}
+
+.menu-hr {
+  width: 327px;
+  margin: 15px auto 24px auto;
+  padding: 0;
+  position: relative;
+  /* right: 36px; */
+  color: #6f6c6b;
+}
+
+
+
+.navbar ul.active {
+  right: 0;
+}
+
+.navbar ul a {
+  color: #FFF5E1;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+}
+
+.navbar ul li {
+  padding-left: 40px;
+}
+
+ham {
+  transform: none;
+}
+
+.ham.active .hamburger:nth-child(2) {
+  opacity: 0;
+}
+
+.ham.active .hamburger:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.ham.active .hamburger:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+
+
+
 @media (min-width: 768px) {
   body {
     width: 100%;
@@ -517,6 +582,7 @@ textarea {
 
   .navbar ul {
     display: inline;
+    flex-direction: row;
     display: flex;
     width: 295px;
     align-content: center;
@@ -524,6 +590,10 @@ textarea {
     position: relative;
     bottom: 12px;
     margin-right: 130px;
+    left: 0;
+    top: -90px;
+    height: 8px;
+    background-color: #3c3a39;
   }
 
   .card1 a {
