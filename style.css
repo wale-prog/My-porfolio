@@ -538,6 +538,7 @@ textarea {
   font-size: 32px;
   line-height: 44px;
   text-decoration: none;
+  margin-left: 40px;
 }
 
 .ham.active .hamburger:nth-child(2) {
