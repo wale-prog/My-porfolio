@@ -84,11 +84,18 @@ body {
   margin-top: 22px;
 }
 
+.ham {
+  cursor: pointer;
+}
+
 .hamburger {
-  border: solid 2px #fff;
-  margin-bottom: 4px;
-  width: 20px;
+  background-color: #acb7c3;
+  margin: 5px auto;
+  width: 24px;
+  height: 3px;
   border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .underline {
