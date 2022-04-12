@@ -16,11 +16,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-
-  /* padding-top: 36px; */
-
   padding-top: 40px;
-
 }
 
 .container {
@@ -373,7 +369,7 @@ body {
   position: fixed;
   right: -200%;
   top: 0;
-  padding-top: 76px;
+  padding-top: 80px;
   gap: 0;
   background-color: #3c3a39;
   width: 100%;
