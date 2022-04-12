@@ -254,7 +254,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   font-size: 16px;
-  background-color: #5c0b07;
+  background-color: #ff6b00;
 }
 
 .printing p {
@@ -265,6 +265,10 @@ body {
   line-height: 24px;
   color: #fff;
   margin: 0 16px;
+}
+
+.navbar ul li {
+  padding-left: 40px;
 }
 
 .printing .skill-list li {
@@ -347,6 +351,22 @@ body {
   color: #fff;
   margin-top: 48px;
   padding: 0;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: left;
+  position: fixed;
+  right: -200%;
+  top: 0;
+  padding-top: 76px;
+  gap: 0;
+  background-color: #3c3a39;
+  width: 100%;
+  transition: 0.3s;
+  height: 700px;
 }
 
 #about-category ul {
@@ -498,27 +518,11 @@ textarea {
   border-radius: 10px;
 }
 
-.navbar ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  text-align: left;
-  position: fixed;
-  right: -200%;
-  top: 0;
-  padding-top: 76px;
-  gap: 0;
-  background-color: #3c3a39;
-  width: 100%;
-  transition: 0.3s;
-  height: 400px;
-}
-
 .menu-hr {
-  width: 327px;
-  margin: 15px 24px 24px 0;
-  position: relative;
-  right: 16px;
+  width: 87.2%;
+  margin: 15px 0 24px 0;
+  padding-left: 0;
+  height: 1px;
   color: #6f6c6b;
 }
 
@@ -528,18 +532,13 @@ textarea {
 
 .navbar ul a {
   color: #fff5e1;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   text-decoration: none;
 }
-
-.navbar ul li {
-  padding-left: 40px;
-}
-
 
 .ham.active .hamburger:nth-child(2) {
   opacity: 0;
@@ -571,7 +570,7 @@ textarea {
   }
 
   .navbar ul {
-    display: inline;
+    /* display: inline; */
     flex-direction: row;
     display: flex;
     width: 295px;
