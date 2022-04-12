@@ -206,7 +206,7 @@ body {
 }
 
 .btn {
-  background-color: #FF6b00;
+  background-color: #ff6b00;
   border: none;
 }
 
@@ -516,21 +516,18 @@ textarea {
 
 .menu-hr {
   width: 327px;
-  margin: 15px auto 24px auto;
-  padding: 0;
+  margin: 15px 24px 24px 0;
   position: relative;
-  /* right: 36px; */
+  right: 16px;
   color: #6f6c6b;
 }
-
-
 
 .navbar ul.active {
   right: 0;
 }
 
 .navbar ul a {
-  color: #FFF5E1;
+  color: #fff5e1;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -543,9 +540,6 @@ textarea {
   padding-left: 40px;
 }
 
-ham {
-  transform: none;
-}
 
 .ham.active .hamburger:nth-child(2) {
   opacity: 0;
@@ -562,10 +556,6 @@ ham {
 .hidden {
   visibility: hidden;
 }
-
-
-
-
 
 @media (min-width: 768px) {
   body {
