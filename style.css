@@ -71,6 +71,7 @@ body {
   margin: 0;
   text-decoration: none;
   color: #fff;
+  display: block;
 }
 
 .socials {
@@ -522,7 +523,6 @@ textarea {
   width: 87.2%;
   margin: 15px 0 24px 0;
   padding-left: 0;
-  height: 1px;
   color: #6f6c6b;
 }
 
@@ -538,6 +538,7 @@ textarea {
   font-size: 32px;
   line-height: 44px;
   text-decoration: none;
+  margin-left: 40px;
 }
 
 .ham.active .hamburger:nth-child(2) {
@@ -600,6 +601,7 @@ textarea {
     width: 15px;
     transition-property: color, margin-right, margin-left;
     transition-duration: 2s;
+    margin-left: 0;
   }
 
   .navbar ul a:hover {
@@ -615,6 +617,7 @@ textarea {
 
   .navbar ul li {
     list-style: none;
+    padding-left: 0;
   }
 
   .navbar {
