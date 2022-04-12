@@ -16,11 +16,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding-top: 36px;
-}
-
-.navbar ul {
-  display: none;
+  padding-top: 40px;
 }
 
 .container {
@@ -75,6 +71,7 @@ body {
   margin: 0;
   text-decoration: none;
   color: #fff;
+  display: block;
 }
 
 .socials {
@@ -87,11 +84,18 @@ body {
   margin-top: 22px;
 }
 
+.ham {
+  cursor: pointer;
+}
+
 .hamburger {
-  border: solid 2px #fff;
-  margin-bottom: 4px;
-  width: 20px;
+  background-color: #acb7c3;
+  margin: 5px auto;
+  width: 24px;
+  height: 3px;
   border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .underline {
@@ -210,7 +214,7 @@ body {
 }
 
 .btn {
-  background-color: #5c0b07;
+  background-color: #ff6b00;
   border: none;
 }
 
@@ -258,7 +262,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   font-size: 16px;
-  background-color: #5c0b07;
+  background-color: #ff6b00;
 }
 
 .printing p {
@@ -269,6 +273,10 @@ body {
   line-height: 24px;
   color: #fff;
   margin: 0 16px;
+}
+
+.navbar ul li {
+  padding-left: 40px;
 }
 
 .printing .skill-list li {
@@ -351,6 +359,22 @@ body {
   color: #fff;
   margin-top: 48px;
   padding: 0;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: left;
+  position: fixed;
+  right: -200%;
+  top: 0;
+  padding-top: 80px;
+  gap: 0;
+  background-color: #3c3a39;
+  width: 100%;
+  transition: 0.3s;
+  height: 700px;
 }
 
 #about-category ul {
@@ -441,7 +465,7 @@ textarea {
 }
 
 .form-btn {
-  background-color: #5c0b07;
+  background-color: #ff6b00;
   border: none;
   text-decoration: none;
   color: #fff;
@@ -502,6 +526,44 @@ textarea {
   border-radius: 10px;
 }
 
+.menu-hr {
+  width: 87.2%;
+  margin: 15px 0 24px 0;
+  padding-left: 0;
+  color: #6f6c6b;
+}
+
+.navbar ul.active {
+  right: 0;
+}
+
+.navbar ul a {
+  color: #fff5e1;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.ham.active .hamburger:nth-child(2) {
+  opacity: 0;
+}
+
+.ham.active .hamburger:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.ham.active .hamburger:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
 @media (min-width: 768px) {
   body {
     width: 100%;
@@ -516,7 +578,8 @@ textarea {
   }
 
   .navbar ul {
-    display: inline;
+    /* display: inline; */
+    flex-direction: row;
     display: flex;
     width: 295px;
     align-content: center;
@@ -524,6 +587,10 @@ textarea {
     position: relative;
     bottom: 12px;
     margin-right: 130px;
+    left: 0;
+    top: -90px;
+    height: 8px;
+    background-color: #3c3a39;
   }
 
   .card1 a {
@@ -541,6 +608,7 @@ textarea {
     width: 15px;
     transition-property: color, margin-right, margin-left;
     transition-duration: 2s;
+    margin-left: 0;
   }
 
   .navbar ul a:hover {
@@ -556,6 +624,7 @@ textarea {
 
   .navbar ul li {
     list-style: none;
+    padding-left: 0;
   }
 
   .navbar {
