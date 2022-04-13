@@ -259,15 +259,16 @@
     <footer id="footer">
       <section class="contact-me">
         <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
-        <form action="https://formspree.io/f/xpzbjqge" method="post">
+        <form action="" method="" id="form">
           <input class="name" type="text" name="Name" maxlength="30" placeholder="Full name" required>
           <hr>
           <input class="email" type="email" name="Email" placeholder="Email address" required
-            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}$">
+            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}$" id="email">
           <hr>
           <textarea class="textarea" name="Message" cols="30" maxlength="500" rows="10" placeholder="Enter text here"
             required></textarea>
           <button class="form-btn" type="submit">Get in touch</button>
+          <div id="error"></div>
         </form>
       </section>
       <div class="footer-line"></div>
@@ -314,6 +315,7 @@
 
   <!-- Modal design ends -->
   <script src="index.js"></script>
+  <script src="form.js"></script>
 </body>
 
 </html>
