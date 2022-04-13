@@ -564,6 +564,117 @@ textarea {
   visibility: hidden;
 }
 
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  justify-content: center;
+  width: 91.5%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.75rem;
+}
+
+.modal-header img {
+  cursor: pointer;
+}
+
+.modal-body p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #344563;
+}
+
+.modal-buttons {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.modal-buttons li {
+  background-color: #ff6b00;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.live-btn img {
+  margin-left: 16px;
+  position: relative;
+  top: 4px;
+}
+
+.source-btn img {
+  margin-left: 16px;
+  position: relative;
+  top: 4px;
+}
+
+.first-btn {
+  width: 134px;
+}
+
+.second-btn {
+  width: 159px;
+}
+
+#blur.active {
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#recent-work-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  height: 800px;
+  margin-right: 16px;
+  margin-left: 16px;
+  background-color: #fff;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+  visibility: hidden;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#recent-work-modal.active {
+  top: 70px;
+  visibility: visible;
+  transition: 0.5s;
+  opacity: 1;
+}
+
 @media (min-width: 768px) {
   body {
     width: 100%;
