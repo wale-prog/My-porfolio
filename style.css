@@ -1043,7 +1043,7 @@ textarea {
   }
 
   #recent-work-modal {
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 1156px;
     margin-left: 180px;
@@ -1052,9 +1052,13 @@ textarea {
     background-color: #fff;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
     visibility: hidden;
-    transition: 0.5s;
     opacity: 1;
-  }
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
 
   .first-btn {
     margin-right: 19px;
