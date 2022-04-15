@@ -275,6 +275,13 @@ body {
   margin: 0 16px;
 }
 
+.modal-buttons li {
+  background-color: #ff6b00;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .navbar ul li {
   padding-left: 40px;
 }
@@ -301,6 +308,14 @@ body {
   background-position-y: 380px;
 }
 
+.modal-header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.75rem;
+}
+
 #about-me h1 {
   padding-top: 120px;
   padding-bottom: 24px;
@@ -320,6 +335,15 @@ body {
   text-align: center;
   color: #172b4d;
   margin: 0 0 73px 0;
+}
+
+.modal-body p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #344563;
 }
 
 #about-me p {
@@ -537,6 +561,17 @@ textarea {
   right: 0;
 }
 
+.modal-buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
 .navbar ul a {
   color: #fff5e1;
   font-family: 'Inter', sans-serif;
@@ -578,25 +613,8 @@ textarea {
   align-items: center;
 }
 
-.modal-header h1 {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 2.75rem;
-}
-
 .modal-header img {
   cursor: pointer;
-}
-
-.modal-body p {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: #344563;
 }
 
 .modal-buttons {
@@ -605,24 +623,6 @@ textarea {
   justify-content: space-between;
   align-items: center;
   padding: 0;
-}
-
-.modal-buttons li {
-  background-color: #ff6b00;
-  height: 48px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.modal-buttons a {
-  text-decoration: none;
-  color: #fff;
-  padding: 12px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
 }
 
 .live-btn img {
@@ -662,7 +662,7 @@ textarea {
   margin-right: 16px;
   margin-left: 16px;
   background-color: #fff;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
   visibility: hidden;
   transition: 0.5s;
   opacity: 0;

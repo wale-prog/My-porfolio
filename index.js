@@ -19,28 +19,24 @@ navMenu.addEventListener('click', () => {
   ham.classList.remove('active');
   navMenu.classList.remove('active');
 });
-/* Pop up implementation starts*/
+/* Pop up implementation starts */
 
-
-
-let closeModal = function () {
+const closeModal = () => {
   blur.classList.remove('active');
   popupContent.classList.remove('active');
-}
+};
 
-let modal = {
+const modal = {
   modalOpen: () => {
     const modalBody = document.createElement('div');
     const modalHeader = document.createElement('div');
-    const h1 = document.createElement('h1')
 
-
-    modalBody.appendChild(modalHeader)
-    popupContent.appendChild(modalBody)
+    modalBody.appendChild(modalHeader);
+    popupContent.appendChild(modalBody);
     blur.classList.add('active');
     popupContent.classList.add('active');
-  }
-}
+  },
+};
 
-popup1.addEventListener('click', modal.modalOpen)
+popup1.addEventListener('click', modal.modalOpen);
 close.addEventListener('click', closeModal);
