@@ -265,6 +265,22 @@ body {
   background-color: #ff6b00;
 }
 
+.btn_2:hover {
+  background-color: #fff5e1;
+  color: #e05304;
+  border: solid 1px #e05304;
+}
+
+.btn_2:active {
+  background-color: #e05304;
+  color: #dfe1e6;
+}
+
+.btn2:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
 .printing p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -703,6 +719,7 @@ textarea {
 
   .card1 a {
     display: inline-block;
+    margin-top: 12px;
   }
 
   .navbar ul a {
@@ -1043,12 +1060,13 @@ textarea {
   }
 
   #recent-work-modal {
-    position: fixed;
-    height: 100vh;
-    width: 1156px;
-    margin-left: 180px;
-    margin-right: 142px;
-    top: 0px;
+    position: absolute;
+    height: 631px;
+    margin: 0 80px 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
     visibility: hidden;
@@ -1058,7 +1076,7 @@ textarea {
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
-}
+  }
 
   .first-btn {
     margin-right: 19px;
@@ -1086,6 +1104,14 @@ textarea {
 
   .skill-list {
     margin-top: 0;
+  }
+
+  .card6 div {
+    margin-top: 180px;
+  }
+
+  .card6 div p {
+    margin-top: 70px;
   }
 
 }
