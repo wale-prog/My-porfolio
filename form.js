@@ -10,7 +10,7 @@ function valid(input) {
   }
 }
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', function (event) {
   if (!valid(email.value)) {
     event.preventDefault()
     errorElement.innerText = 'Please enter your email address in lower casing';
