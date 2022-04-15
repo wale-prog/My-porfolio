@@ -5,14 +5,13 @@ const errorElement = document.getElementById('error');
 function valid(input) {
   if (input === input.toLowerCase()) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
-form.addEventListener('submit', function (event) {
+form.addEventListener('submit', (event) => {
   if (!valid(email.value)) {
-    event.preventDefault()
+    event.preventDefault();
     errorElement.innerText = 'Please enter your email address in lower casing';
   }
-})
+});

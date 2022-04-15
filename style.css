@@ -397,6 +397,13 @@ body {
   margin-right: 22.92px;
 }
 
+.modal-buttons li {
+  background-color: #ff6b00;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
 #about-category ul li {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -590,13 +597,6 @@ textarea {
   padding: 0;
 }
 
-.modal-buttons li {
-  background-color: #ff6b00;
-  height: 48px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .modal-buttons a {
   text-decoration: none;
   color: #fff;
@@ -640,13 +640,13 @@ textarea {
   align-items: center;
   position: absolute;
   z-index: 2;
-  top: 20px;
+  top: 100px;
   height: 800px;
   margin-right: 16px;
   margin-left: 16px;
   background-color: #fff;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
-  /* visibility: hidden; */
+  visibility: hidden;
   transition: 0.5s;
   opacity: 1;
 }
@@ -1043,21 +1043,21 @@ textarea {
   }
 
   #recent-work-modal {
-    z-index: 2;
-    height: 631px;
+    position: absolute;
+    height: 100vh;
     width: 1156px;
-    margin-left: 110px;
+    margin-left: 180px;
     margin-right: 142px;
-    margin-top: 90px;
+    top: 0px;
     background-color: #fff;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
-    /* visibility: hidden; */
+    visibility: hidden;
     transition: 0.5s;
     opacity: 1;
   }
 
-  .modal-desktop {
-    /* width: 57%; */
+  .first-btn {
+    margin-right: 19px;
   }
 
   .modal-flex {
@@ -1067,6 +1067,7 @@ textarea {
   .modal-buttons {
     margin: 2px;
     padding: 0;
+    justify-content: left;
   }
 
   .modal-para-text {
