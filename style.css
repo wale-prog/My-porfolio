@@ -1019,4 +1019,14 @@ textarea {
   .footer-line {
     margin-bottom: 28.03px;
   }
+
+  #error {
+    color: red;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    top: -130px;
+    left: -185px;
+  }
 }
