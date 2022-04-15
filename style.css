@@ -413,13 +413,6 @@ body {
   margin-right: 22.92px;
 }
 
-.modal-buttons li {
-  background-color: #ff6b00;
-  height: 48px;
-  display: flex;
-  justify-content: space-between;
-}
-
 #about-category ul li {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -560,6 +553,17 @@ textarea {
   right: 0;
 }
 
+.modal-buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
 .navbar ul a {
   color: #fff5e1;
   font-family: 'Inter', sans-serif;
@@ -613,17 +617,6 @@ textarea {
   padding: 0;
 }
 
-.modal-buttons a {
-  text-decoration: none;
-  color: #fff;
-  padding: 12px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-}
-
 .live-btn img {
   margin-left: 16px;
   position: relative;
@@ -657,7 +650,7 @@ textarea {
   position: absolute;
   z-index: 2;
   top: 100px;
-  height: 800px;
+  height: 718px;
   margin-right: 16px;
   margin-left: 16px;
   background-color: #fff;
@@ -745,6 +738,13 @@ textarea {
 
   .socials li {
     margin-bottom: 18px;
+  }
+
+  .modal-buttons li {
+    background-color: #ff6b00;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .navbar ul li {
@@ -929,6 +929,10 @@ textarea {
     color: #344563;
   }
 
+  .card6 div p {
+    margin-top: 70px;
+  }
+
   #about-me p {
     font-family: 'Inter', sans-serif;
     color: #f4f5f7;
@@ -963,6 +967,10 @@ textarea {
 
   .card3 div {
     margin-top: 221px;
+  }
+
+  .card6 div {
+    margin-top: 180px;
   }
 
   #about-category div {
@@ -1093,7 +1101,6 @@ textarea {
   }
 
   .modal-para-text {
-    /* width: 36.7%; */
     margin-left: 25px;
   }
 
@@ -1105,13 +1112,4 @@ textarea {
   .skill-list {
     margin-top: 0;
   }
-
-  .card6 div {
-    margin-top: 180px;
-  }
-
-  .card6 div p {
-    margin-top: 70px;
-  }
-
 }

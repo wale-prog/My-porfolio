@@ -150,7 +150,7 @@ modalContent.forEach((modal) => {
       ${modal.featureImageMobile}
       ${modal.featuredImageDesk}
     <div>
-        <p class="nodisplay-desktop">${modal.featureDescriptionMob}</P>
+        <p class="nodisplay-desktop modal-para-text">${modal.featureDescriptionMob}</P>
         <p class="hidden-mobile modal-para-text">${modal.featureDescriptionDesk}</p>
     
         <div class="modal-btn-container">
