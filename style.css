@@ -671,6 +671,13 @@ textarea {
   opacity: 1;
 }
 
+.modal-buttons li {
+  background-color: #ff6b00;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
 #error {
   color: red;
   font-family: 'inter', sans-serif;
@@ -695,7 +702,6 @@ textarea {
   }
 
   .navbar ul {
-    /* display: inline; */
     flex-direction: row;
     display: flex;
     width: 295px;
@@ -744,7 +750,7 @@ textarea {
     background-color: #ff6b00;
     height: 48px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 
   .navbar ul li {
