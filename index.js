@@ -163,10 +163,7 @@ modalContent.forEach((modal) => {
   </div>
   `;
   modalGen.appendChild(modalBody);
-  console.log(modalBody.innerHTML)
 });
-
-
 
 /* Pop up implementation starts */
 const blur = document.getElementById('blur');
