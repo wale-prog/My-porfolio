@@ -265,6 +265,22 @@ body {
   background-color: #ff6b00;
 }
 
+.btn_2:hover {
+  background-color: #fff5e1;
+  color: #e05304;
+  border: solid 1px #e05304;
+}
+
+.btn_2:active {
+  background-color: #e05304;
+  color: #dfe1e6;
+}
+
+.btn2:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
 .printing p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -273,6 +289,13 @@ body {
   line-height: 24px;
   color: #fff;
   margin: 0 16px;
+}
+
+.modal-buttons li {
+  background-color: #ff6b00;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar ul li {
@@ -537,6 +560,17 @@ textarea {
   right: 0;
 }
 
+.modal-buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
 .navbar ul a {
   color: #fff5e1;
   font-family: 'Inter', sans-serif;
@@ -564,6 +598,96 @@ textarea {
   visibility: hidden;
 }
 
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  justify-content: center;
+  width: 91.5%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header img {
+  cursor: pointer;
+}
+
+.modal-buttons {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.live-btn img {
+  margin-left: 16px;
+  position: relative;
+  top: 4px;
+}
+
+.source-btn img {
+  margin-left: 16px;
+  position: relative;
+  top: 4px;
+}
+
+.first-btn {
+  width: 134px;
+}
+
+.second-btn {
+  width: 159px;
+}
+
+#blur.active {
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#recent-work-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  height: 718px;
+  margin-right: 16px;
+  margin-left: 16px;
+  background-color: #fff;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.modal-mobile {
+  width: 90.7%;
+}
+
+#recent-work-modal.active {
+  top: 70px;
+  visibility: visible;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+#error {
+  color: red;
+  font-family: 'inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  position: relative;
+  text-align: center;
+  top: -100px;
+}
+
 @media (min-width: 768px) {
   body {
     width: 100%;
@@ -578,7 +702,6 @@ textarea {
   }
 
   .navbar ul {
-    /* display: inline; */
     flex-direction: row;
     display: flex;
     width: 295px;
@@ -595,6 +718,7 @@ textarea {
 
   .card1 a {
     display: inline-block;
+    margin-top: 12px;
   }
 
   .navbar ul a {
@@ -620,6 +744,12 @@ textarea {
 
   .socials li {
     margin-bottom: 18px;
+  }
+
+  .modal-buttons li {
+    background-color: #ff6b00;
+    height: 48px;
+    display: flex;
   }
 
   .navbar ul li {
@@ -752,6 +882,14 @@ textarea {
     background-image: url('images/portfolio-bg4.png');
   }
 
+  .card5 {
+    background-image: url("images/portfolio-bg2.png");
+  }
+
+  .card6 {
+    background-image: url("images/portfolio-bg3.png");
+  }
+
   .btn_2 {
     padding: 17px 134.92px;
     position: relative;
@@ -774,9 +912,30 @@ textarea {
     margin: 130px 0 0 130px;
   }
 
+  .modal-header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
+
   #about-me h1 {
     line-height: 82px;
     width: 40%;
+  }
+
+  .modal-body p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #344563;
+  }
+
+  .card6 div p {
+    margin-top: 70px;
   }
 
   #about-me p {
@@ -813,6 +972,10 @@ textarea {
 
   .card3 div {
     margin-top: 221px;
+  }
+
+  .card6 div {
+    margin-top: 180px;
   }
 
   #about-category div {
@@ -897,5 +1060,61 @@ textarea {
 
   .footer-line {
     margin-bottom: 28.03px;
+  }
+
+  #error {
+    color: red;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    top: -130px;
+    left: -185px;
+  }
+
+  #recent-work-modal {
+    position: absolute;
+    height: 631px;
+    margin: 0 80px 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .first-btn {
+    margin-right: 19px;
+  }
+
+  .modal-flex {
+    display: flex;
+  }
+
+  .modal-buttons {
+    margin: 2px;
+    padding: 0;
+    justify-content: left;
+  }
+
+  .modal-para-text {
+    margin-left: 25px;
+  }
+
+  .modal-btn-container {
+    margin-left: 25px;
+    margin-right: 0;
+  }
+
+  .skill-list {
+    margin-top: 0;
   }
 }
