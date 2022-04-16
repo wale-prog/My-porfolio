@@ -324,6 +324,14 @@ body {
   background-position-y: 380px;
 }
 
+.modal-header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.75rem;
+}
+
 #about-me h1 {
   padding-top: 120px;
   padding-bottom: 24px;
@@ -343,6 +351,15 @@ body {
   text-align: center;
   color: #172b4d;
   margin: 0 0 73px 0;
+}
+
+.modal-body p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #344563;
 }
 
 #about-me p {
@@ -681,7 +698,7 @@ textarea {
 #error {
   color: red;
   font-family: 'inter', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   position: relative;
   text-align: center;
