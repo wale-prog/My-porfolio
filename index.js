@@ -22,12 +22,12 @@ const projectRecent = [
     projectHeading: 'My Recent Works',
     projectNameClass: 'portfolio-heading',
     projectSecClass: 'portfolio-header',
-    featuredImageMob: 'images/placeholder.png',
+    featuredImageMob: 'images/To-do_list_mobile.png',
     MobImageClass: 'nodisplay-desktop',
-    featuredImageDesk: 'images/placeholder-desktop.png',
-    projectName: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the     industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    featuredImageDesk: 'images/To-do_list_desktop.png',
+    projectName: 'To-do List',
+    description: 'To-Do list a web app for tracking personal progress through the day. Users can input a list of tasks and mark them as completed once they are done. Built with JavaScript and Webpack',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
   },
 ];
 
@@ -112,21 +112,14 @@ projectPortfolio.forEach((cards) => {
 
 const modalContent = [
   {
-    projectName: 'Multi Post Stories',
-    featuredImageDesk: '<img class="hidden-mobile modal-desktop" src="images/modal-desktop.png" alt="portfolio snapshot">',
-    featureImageMobile: '<img class="nodisplay-desktop modal-mobile" src="images/modal-protfolio.png" alt="portfolio snapshot">',
+    projectName: 'To-do List',
+    featuredImageDesk: '<img class="hidden-mobile modal-desktop" src="images/To-do_list_desktop.png" alt="portfolio snapshot">',
+    featureImageMobile: '<img class="nodisplay-desktop modal-mobile" src="images/To-do_list_mobile.png" alt="portfolio snapshot">',
     closeBtn: 'images/modal-close.png',
-    featureDescriptionMob: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    featureDescriptionDesk: `Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum
-    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-    type
-    and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting
-    industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-    galley of type and scrambled it 1960s with the releax map lapora verita.`,
-    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-    liveLink: 'https://wale-prog.github.io/My-porfolio',
+    featureDescriptionMob: 'To-Do list a web app for tracking personal progress through the day. Users can input a list of tasks and mark them as completed once they are done. Built with JavaScript and Webpack',
+    featureDescriptionDesk: 'To-Do list a web app for tracking personal progress through the day. Users can input a list of tasks and mark them as completed once they are done. Built with JavaScript and Webpack',
+    technologies: ['html', 'css', 'JavaScript', 'Webpack'],
+    liveLink: 'https://wale-prog.github.io/To-do-List-Project/',
     sourceLink: 'https://github.com/wale-prog/My-porfolio',
   },
 ];
@@ -138,13 +131,14 @@ modalContent.forEach((modal) => {
   modalBody.innerHTML = `
   <div class="modal-header">
     <h1 class="nodisplay-desktop">${modal.projectName}</h1>
-    <h1 class="hidden-mobile">Keeping track of hundreds of components website</h1>
+    <h1 class="hidden-mobile">Track your daily milestones and achievments</h1>
     <img class="close" src="${modal.closeBtn}" alt="close modal button">
   </div>
   <ul class="skill-list">
     <li>${modal.technologies[0]}</li>
     <li>${modal.technologies[1]}</li>
     <li>${modal.technologies[2]}</li>
+    <li>${modal.technologies[3]}</li>
   </ul>
   <div class="modal-flex">
       ${modal.featureImageMobile}
@@ -155,8 +149,8 @@ modalContent.forEach((modal) => {
     
         <div class="modal-btn-container">
           <ul class="modal-buttons">
-            <li class="first-btn"><a class="live-btn" href="${modal.liveLink}">See Live <img src="images/modal-live.png" alt="Live project page"></a></li>
-            <li class="second-btn"><a class="source-btn" href="${modal.sourceLink}">See Source <img src="images/modal-git.png" alt="Link to source code"></a></li>
+            <li class="first-btn"><a class="live-btn" href="${modal.liveLink}" target="_blank">See Live <img src="images/modal-live.png" alt="Live project page"></a></li>
+            <li class="second-btn"><a class="source-btn" href="${modal.sourceLink}" target="_blank">See Source <img src="images/modal-git.png" alt="Link to source code"></a></li>
           </ul>
         </div>
     </div>
