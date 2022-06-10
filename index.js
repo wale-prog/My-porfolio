@@ -22,12 +22,12 @@ const projectRecent = [
     projectHeading: 'My Recent Works',
     projectNameClass: 'portfolio-heading',
     projectSecClass: 'portfolio-header',
-    featuredImageMob: 'images/placeholder.png',
+    featuredImageMob: 'images/To-do_list_mobile.png',
     MobImageClass: 'nodisplay-desktop',
-    featuredImageDesk: 'images/placeholder-desktop.png',
-    projectName: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the     industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    featuredImageDesk: 'images/To-do_list_desktop.png',
+    projectName: 'To-do List',
+    description: 'To-Do list a web app for tracking personal progress through the day. Users can input a list of tasks and mark them as completed once they are done. Built with JavaScript and Webpack',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
   },
 ];
 
@@ -112,7 +112,7 @@ projectPortfolio.forEach((cards) => {
 
 const modalContent = [
   {
-    projectName: 'Multi Post Stories',
+    projectName: 'To-do List',
     featuredImageDesk: '<img class="hidden-mobile modal-desktop" src="images/modal-desktop.png" alt="portfolio snapshot">',
     featureImageMobile: '<img class="nodisplay-desktop modal-mobile" src="images/modal-protfolio.png" alt="portfolio snapshot">',
     closeBtn: 'images/modal-close.png',

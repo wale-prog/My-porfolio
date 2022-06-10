@@ -37,19 +37,14 @@
 - For practice of HTML5 and CSS technologies.
 
 
-## Author 1
+## Author 
 
 👤 **Wale Olapetan**
 
 - GitHub: [@wale-prog](https://github.com/wale-prog)
 - Twitter: [@Wale_Petan](https://twitter.com/Wale_Petan)
+- LinkedIn: [@walepetan](https://www.linkedin.com/in/walepetan)
 
-
-👤 ## Author 2
-
-- GitHub: [@medsonmoombe](https://github.com/medsonmoombe)
-- Twitter: [@emmanue78388405](https://twitter.com/@emmanue78388405)
-- LinkedIn: [Emmanuel moombe](https://linkedin.com/in/Emmanuel moombe)
 
 
 ## 🤝 Contributing
