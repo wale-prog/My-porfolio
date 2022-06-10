@@ -674,7 +674,8 @@ textarea {
   position: absolute;
   z-index: 2;
   top: 100px;
-  height: 718px;
+
+  /* height: 718px; */
   margin-right: 16px;
   margin-left: 16px;
   background-color: #fff;
@@ -829,8 +830,8 @@ textarea {
   .portfolio-header div {
     position: relative;
     bottom: 60px;
-    margin-left: 492.5px;
-    width: 794px;
+    margin-left: 40%;
+    width: 60%;
   }
 
   .portfolio-header h1 {
@@ -871,7 +872,7 @@ textarea {
   }
 
   .grid-container {
-    grid-template-columns: 369px 369px 369px;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-left: 141.5px;
     grid-template-rows: 435px 435px;
     gap: 24px;
@@ -1091,8 +1092,11 @@ textarea {
 
   #recent-work-modal {
     position: absolute;
-    height: 631px;
-    margin: 0 80px 0 80px;
+    padding-bottom: 50px;
+
+    /* height: 631px; */
+
+    /* margin: 0 80px 0 80px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1124,6 +1128,8 @@ textarea {
 
   .modal-para-text {
     margin-left: 25px;
+
+    /* margin-top: 50px; */
   }
 
   .modal-btn-container {
