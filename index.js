@@ -89,7 +89,7 @@ projectPortfolio.forEach((cards) => {
     if (i === 1) {
       const layout = document.createElement('div');
       const firstCard = document.querySelector(`.card${i}`);
-      layout.innerHTML = cardInstancefunc('nonvisible', '', '', '');
+      layout.innerHTML = cardInstancefunc('nonvisible', 'popup2', '', '');
       firstCard.appendChild(layout);
     } else if (i === 2 || i === 5) {
       const layout = document.createElement('div');
@@ -164,6 +164,7 @@ const blur = document.getElementById('blur');
 const popupContent = document.getElementById('recent-work-modal');
 const close = document.querySelector('.close');
 const popup1 = document.querySelectorAll('.popup1-btn');
+const popup2 = document.querySelector('popup2')
 
 const modalOpen = () => {
   blur.classList.toggle('active');
