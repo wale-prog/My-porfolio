@@ -254,7 +254,7 @@ body {
 }
 
 .btn_2 {
-  width: 100px;
+  width: 30.7%;
   padding: 12px 113.5px;
   text-decoration: none;
   color: #fff;
@@ -276,7 +276,7 @@ body {
   color: #dfe1e6;
 }
 
-.btn2:disabled {
+.btn_2:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
 }
@@ -673,14 +673,11 @@ textarea {
   align-items: center;
   position: absolute;
   z-index: 2;
-  top: 100px;
-
-  /* height: 718px; */
   margin-right: 16px;
   margin-left: 16px;
   background-color: #fff;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
-  visibility: hidden;
+  /* display: none; */
   transition: 0.5s;
   opacity: 1;
 }
@@ -690,8 +687,7 @@ textarea {
 }
 
 #recent-work-modal.active {
-  top: 70px;
-  visibility: visible;
+  top: 1000px;
   transition: 0.5s;
   opacity: 1;
 }
@@ -872,8 +868,10 @@ textarea {
   }
 
   .grid-container {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 141.5px;
+    margin: auto;
+    width: 80%;
     grid-template-rows: 435px 435px;
     gap: 24px;
     margin-top: 24px;
@@ -886,32 +884,49 @@ textarea {
 
   .card1 {
     background-image: url("images/deezerApp-home.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 375px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card1:hover {
+    width: 400px;
+    transition: 0.5s ease-in-out;
   }
 
   .card2 {
     background-image: url("images/portfolio-bg2.png");
+    background-repeat: no-repeat;
   }
 
   .card3 {
     background-image: url("images/portfolio-bg3.png");
+    background-repeat: no-repeat;
   }
 
   .card4 {
     background-image: url('images/portfolio-bg4.png');
+    background-repeat: no-repeat;
   }
 
   .card5 {
     background-image: url("images/portfolio-bg2.png");
+    background-repeat: no-repeat;
   }
 
   .card6 {
     background-image: url("images/portfolio-bg3.png");
+    background-repeat: no-repeat;
   }
 
   .btn_2 {
     padding: 17px 134.92px;
     position: relative;
     bottom: 62px;
+    width: 30%;
   }
 
   .about-me-gen {
@@ -1092,24 +1107,50 @@ textarea {
 
   #recent-work-modal {
     position: absolute;
+    top: 200px;
     padding-bottom: 50px;
-
-    /* height: 631px; */
-
-    /* margin: 0 80px 0 80px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #fff;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
-    visibility: hidden;
     opacity: 1;
+    visibility: hidden;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+  }
+
+  #recent-work-modal.active {
+    visibility: visible;
+    top:1000px
+  }
+  
+#deezer {
+    position: absolute;
+    top: 200px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    visibility: hidden;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  #deezer.active {
+    visibility: visible;
+    top:1500px
   }
 
   .first-btn {
