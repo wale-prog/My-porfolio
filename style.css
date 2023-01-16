@@ -160,8 +160,8 @@ body {
 
 .skill-list {
   list-style: none;
-  display: flex;    
-  padding-left: 0;   
+  display: flex;
+  padding-left: 0;
   flex-wrap: wrap;
   gap: 12px;
 }
@@ -264,6 +264,17 @@ body {
   justify-content: space-between;
 }
 
+.project-tech li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #3c3a39;
+  padding: 4px;
+  border: 1px solid #ff6b00;
+}
+
 .navbar ul li {
   padding-left: 40px;
 }
@@ -316,6 +327,15 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   color: #344563;
+}
+
+.project p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 #about-me p {
@@ -540,6 +560,10 @@ textarea {
   line-height: 24px;
 }
 
+.icon-img a {
+  border-radius: 5px;
+}
+
 .navbar ul a {
   color: #fff5e1;
   font-family: 'Inter', sans-serif;
@@ -613,12 +637,12 @@ textarea {
 #recent-work-modal.active {
   position: fixed;
   top: 50%;
-  left:50%;
+  left: 50%;
   width: 90%;
   transform: translate(-50%, -50%);
   opacity: 1;
   display: inline-flex;
-  box-shadow: 0 10px 30px rgb(0 0 0 / 30%)
+  box-shadow: 0 10px 30px rgb(0 0 0 / 30%);
 }
 
 #error {
@@ -669,26 +693,6 @@ textarea {
   align-items: center;
 }
 
-.project-tech li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #3c3a39;
-  padding: 4px;
-  border: 1px solid #ff6b00
-}
-
-.project p {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 12px;
-}
-
 .modal-img img {
   width: 70%;
   margin: 0 auto;
@@ -696,36 +700,26 @@ textarea {
   border-radius: 10px;
 }
 
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.modal-project-body { 
+.modal-project-body {
   position: fixed;
   width: 80%;
   top: 50%;
   left: 50%;
   background-color: #fff;
   padding: 0 24px 36px 24px;
-  transform: translate(-50%, -50%);  
+  transform: translate(-50%, -50%);
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
 }
 
- .icon-img a {
-  border-radius: 5px;
- }
-
- .icon-img a img {
+.icon-img a img {
   margin-left: 8px;
   position: relative;
   top: 4px;
- }
+}
 
- .icon-img a:first-child {
+.icon-img a:first-child {
   margin-right: 8px;
- }
+}
 
 @media (min-width: 768px) {
   body {
@@ -763,11 +757,11 @@ textarea {
     background-color: #3c3a39;
   }
 
-  .modal-project-body { 
+  .modal-project-body {
     width: 50%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);    
+    transform: translate(-50%, -50%);
   }
 
   .project-modal {
@@ -781,7 +775,7 @@ textarea {
     font-family: 'inter', sans-serif;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: margin-left 2s, margin-right 2s, ease-in-out;
-}
+  }
 
   .modal-img img {
     width: 100%;
@@ -793,12 +787,12 @@ textarea {
   .icon-img a {
     border-radius: 5px;
     margin-right: 32px;
- }
+  }
 
- .modal-content {
-  display: flex;
-  gap: 24px;
- }
+  .modal-content {
+    display: flex;
+    gap: 24px;
+  }
 
   .navbar ul a {
     color: #fff;
@@ -927,6 +921,7 @@ textarea {
     width: 100%;
     padding: 0;
     flex: 1;
+
     /* margin-top: 80px; */
   }
 
@@ -1076,8 +1071,8 @@ textarea {
     height: 114px;
   }
 
-  .form-btn {    
-    margin-left: 0;  
+  .form-btn {
+    margin-left: 0;
   }
 
   .contact-me form {
@@ -1104,7 +1099,7 @@ textarea {
   }
 
   #recent-work-modal {
-    position: fixed;    
+    position: fixed;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;

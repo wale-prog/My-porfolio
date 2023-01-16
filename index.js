@@ -1,4 +1,4 @@
-import { projectData } from './helper.js';
+import projectData from './helper.js';
 
 const ham = document.querySelector('.ham');
 const navMenu = document.querySelector('.nav-menu');
@@ -60,7 +60,7 @@ projectRecent.forEach((recent) => {
 projectData.forEach((project, index) => {
   const projects = document.createElement('div');
   projects.classList.add('project');
-  const projectsContainer = document.querySelector('.grid-container')
+  const projectsContainer = document.querySelector('.grid-container');
   projects.innerHTML = `
     <h3 class="project-title">${project.title}</h3>
     <ul class="project-tech">
@@ -72,10 +72,9 @@ projectData.forEach((project, index) => {
     <p>${project.description}</p>
     <button id=${project.id} class="btn skill-list-btn project-popup">See Project</button>
   `;
-  projects.classList.add(`card${index + 1}`)
-  projectsContainer.appendChild(projects)
+  projects.classList.add(`card${index + 1}`);
+  projectsContainer.appendChild(projects);
 });
-
 
 const modalContent = [
   {
@@ -131,7 +130,6 @@ const popupContent = document.getElementById('recent-work-modal');
 const close = document.querySelector('.close');
 const popup1 = document.querySelectorAll('.popup1-btn');
 
-
 const modalOpen = () => {
   blur.classList.add('active');
   popupContent.classList.add('active');
@@ -141,26 +139,25 @@ const modalOpen = () => {
 const closeModal = () => {
   blur.classList.remove('active');
   popupContent.classList.remove('active');
-   document.body.classList.remove('scroll-lock');
+  document.body.classList.remove('scroll-lock');
 };
 for (let i = 0; i < popup1.length; i += 1) {
-  if (popup1[i].classList.contains('btn'))
-  popup1[i].addEventListener('click', modalOpen);
+  if (popup1[i].classList.contains('btn')) { popup1[i].addEventListener('click', modalOpen); }
 }
 close.addEventListener('click', closeModal);
 
 const btnClicked = document.querySelectorAll('.btn');
-const modalDiv = document.querySelector('.project-modal')
+const modalDiv = document.querySelector('.project-modal');
 for (let i = 0; i < btnClicked.length; i += 1) {
   btnClicked[i].addEventListener('click', (event) => {
-   const projectId = +event.target.id;
-   if (projectId) {
-    const project = projectData.find((project) => project.id === projectId)
-    const projects = document.createElement('div');
-    projects.classList.add('modal-project-body');
-    document.body.classList.add('scroll-lock');
-    blur.classList.add('active');
-    projects.innerHTML = `
+    const projectId = +event.target.id;
+    if (projectId) {
+      const project = projectData.find((project) => project.id === projectId);
+      const projects = document.createElement('div');
+      projects.classList.add('modal-project-body');
+      document.body.classList.add('scroll-lock');
+      blur.classList.add('active');
+      projects.innerHTML = `
     <div class="modal-header">
       <h3 class="project-title">${project.title}</h3>
       <img class="close-modal" src="images/modal-close.png" alt="close modal button">
@@ -187,15 +184,15 @@ for (let i = 0; i < btnClicked.length; i += 1) {
       </div>
     </div>
     `;
-    modalDiv.appendChild(projects);
- 
-    document.querySelector('.close-modal').addEventListener('click', () => {
-      blur.classList.remove('active');
-       document.body.classList.remove('scroll-lock')
-      const projectModal = document.querySelector('.modal-project-body');
-      const projectModalParent = projectModal.parentNode;
-      projectModalParent.removeChild(projectModal);
-    });
-   };
+      modalDiv.appendChild(projects);
+
+      document.querySelector('.close-modal').addEventListener('click', () => {
+        blur.classList.remove('active');
+        document.body.classList.remove('scroll-lock');
+        const projectModal = document.querySelector('.modal-project-body');
+        const projectModalParent = projectModal.parentNode;
+        projectModalParent.removeChild(projectModal);
+      });
+    }
   });
-};
+}
