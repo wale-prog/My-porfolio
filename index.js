@@ -33,8 +33,6 @@ const projectRecent = [
   },
 ];
 
-
-
 const portfolio = document.createElement('section');
 portfolio.id = 'portfolio';
 
@@ -53,7 +51,7 @@ projectRecent.forEach((recent) => {
     <ul class="skill-list">
       ${recent.technologies.map((tech) => `<li>${tech}</li>`).join('')}
     </ul>
-    <a href="#portfolio" class="btn skill-list-btn popup1-btn">See Project</a>
+    <button class="btn skill-list-btn popup1-btn">See Project</button>
   </div>
   </div>`;
   portfolioSection.appendChild(portfolio);
@@ -93,19 +91,6 @@ const modalContent = [
   },
 ];
 
-// const deezerModal = [
-//     {
-//     projectName: 'Deezer Music App',
-//     featuredImageDesk: '<img class="hidden-mobile modal-desktop" src="images/DeezerApp-detail.jpeg" alt="">',
-//     closeBtn: 'images/modal-close.png',
-//     featureDescriptionMob: 'Deezer Mobile Music App" is an entertainment app that sort through musical chart to bring all time music hits around the world to your doorstep and the fun part is that it comes with preview to the music if for instance the user cannot decide. It is powered by Deezer',
-//     featureDescriptionDesk: 'Deezer Mobile Music App" is an entertainment app that sort through musical chart to bring all time music hits around the world to your doorstep and the fun part is that it comes with preview to the music if for instance the user cannot decide. It is powered by Deezer',
-//     technologies: ['html', 'css', 'React', 'Redux', 'Git & Github'],
-//     liveLink: 'https://cheerful-crostata-ea300b.netlify.app/',
-//     sourceLink: 'https://github.com/wale-prog/deezer-music-app',
-//   },
-// ]
-
 modalContent.forEach((modal) => {
   const modalGen = document.getElementById('recent-work-modal');
   const modalBody = document.createElement('div');
@@ -140,39 +125,6 @@ modalContent.forEach((modal) => {
   modalGen.appendChild(modalBody);
 });
 
-// deezerModal.forEach((modal) => {
-//   const modalGen = document.getElementById('deezer');
-//   const modalBody = document.createElement('div');
-//   modalBody.classList.add('modal-body');
-//   modalBody.innerHTML = `
-//   <div class="modal-header">
-//     <h1 class="nodisplay-desktop">${modal.projectName}</h1>
-//     <h1 class="hidden-mobile">Track your daily milestones and achievments</h1>
-//     <img class="close1" src="${modal.closeBtn}" alt="close modal button">
-//   </div>
-//   <ul class="skill-list">
-//   ${modal.technologies.map((tech) => 
-//   `<li>${tech}</li>`
-//   )}
-//   </ul>
-//   <div class="modal-flex">
-//       ${modal.featuredImageDesk}
-//     <div>
-//         <p class="nodisplay-desktop modal-para-text">${modal.featureDescriptionMob}</P>
-//         <p class="hidden-mobile modal-para-text">${modal.featureDescriptionDesk}</p>
-    
-//         <div class="modal-btn-container">
-//           <ul class="modal-buttons">
-//             <li class="first-btn"><a class="live-btn" href="${modal.liveLink}" target="_blank">See Live <img src="images/modal-live.png" alt="Live project page"></a></li>
-//             <li class="second-btn"><a class="source-btn" href="${modal.sourceLink}" target="_blank">See Source <img src="images/modal-git.png" alt="Link to source code"></a></li>
-//           </ul>
-//         </div>
-//     </div>
-//   </div>
-//   `;
-//   modalGen.appendChild(modalBody);
-// });
-
 /* Pop up implementation starts */
 const blur = document.getElementById('blur');
 const popupContent = document.getElementById('recent-work-modal');
@@ -182,12 +134,14 @@ const popup1 = document.querySelectorAll('.popup1-btn');
 
 const modalOpen = () => {
   blur.classList.add('active');
-  popupContent.classList.add('active');  
+  popupContent.classList.add('active');
+  document.body.classList.add('scroll-lock');
 };
 
 const closeModal = () => {
   blur.classList.remove('active');
   popupContent.classList.remove('active');
+   document.body.classList.remove('scroll-lock');
 };
 for (let i = 0; i < popup1.length; i += 1) {
   if (popup1[i].classList.contains('btn'))
@@ -204,6 +158,7 @@ for (let i = 0; i < btnClicked.length; i += 1) {
     const project = projectData.find((project) => project.id === projectId)
     const projects = document.createElement('div');
     projects.classList.add('modal-project-body');
+    document.body.classList.add('scroll-lock');
     blur.classList.add('active');
     projects.innerHTML = `
     <div class="modal-header">
@@ -214,32 +169,33 @@ for (let i = 0; i < btnClicked.length; i += 1) {
       <em>built with &#8658;</em>
       ${project.tech.map((tech) => `<li>${tech}</li>`).join('')}
     </ul>
-    <div class="modal-img">
-      <div>
-        <img class="project-image-modal nodisplay-desktop" src=${project.image} alt=${project.title}/>
-        <img class="project-image-modal hidden-mobile" src=${project.imageDesktop} alt=${project.title}/>
+    <div class="modal-content">
+      <div class="modal-img">
+        <div>
+          <img class="project-image-modal nodisplay-desktop" src=${project.image} alt=${project.title}/>
+          <img class="project-image-modal hidden-mobile" src=${project.imageDesktop} alt=${project.title}/>
+        </div>
       </div>
-      <p>${project.description}</p>
-    </div>
-    <div class="icon-img">
-      <a href=${project.liveLink} target=__blank class="btn skill-list-btn">See Live<img src=${project.liveImage} alt="Live Icon" /> </a>
-      <a href=${project.sourceLink} class="btn skill-list-btn">See Source <img src=${project.sourceImage} alt="Live Icon" /> </a>
+      <div class="icon-img">
+        <div>
+          <p>${project.descriptionModal}</p>
+        </div>
+        <div class="project-external-link">
+          <a href=${project.liveLink} target=__blank class="btn skill-list-btn">See Live<img src=${project.liveImage} alt="Live Icon" /> </a>
+          <a href=${project.sourceLink} target=__blank class="btn skill-list-btn">See Source <img src=${project.sourceImage} alt="Live Icon" /> </a>
+        </div>
+      </div>
     </div>
     `;
-    modalDiv.appendChild(projects)
-    document.querySelectorAll('.project-popup').forEach((project) => {
-      project.addEventListener('click', () => {
-        document.querySelector('.modal-project-body').classList.add('active');
-      })
-    })
+    modalDiv.appendChild(projects);
+ 
     document.querySelector('.close-modal').addEventListener('click', () => {
       blur.classList.remove('active');
+       document.body.classList.remove('scroll-lock')
       const projectModal = document.querySelector('.modal-project-body');
       const projectModalParent = projectModal.parentNode;
       projectModalParent.removeChild(projectModal);
-    })
-   }
-  })
+    });
+   };
+  });
 };
-
-
